@@ -1,0 +1,99 @@
+*{
+    margin:0;
+    padding:0;
+   
+}
+
+html,body {
+  display: flex;
+  flex-flow: column;
+  min-height: 100vh;
+}
+main{
+  flex:1;
+  background:url("../image/starry_sky.jpg") center top/cover no-repeat;
+  min-height:720px;
+}
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    background-color: #333;
+    text-align:center;
+    display: flex;
+    justify-content: center;
+  }
+  
+  li {
+    float: left;
+  }
+  
+  li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  
+  /* Change the link color to #111 (black) on hover */
+  li a:hover {
+    background-color: #111;
+  }
+
+.career_abstract{
+    background-color:rgb(40,40,40,0.85);
+    position:absolute;
+    top:15%;
+    left:6%;
+    padding:30px;
+    margin:10px;
+    outline-color:black;
+    outline-width:5px;
+}
+.title1 {
+    color:#ACE1AF;/*Celadon*/
+    font-family:"Times New Roman";
+}
+.career_abstract p{
+    color:whitesmoke;
+    line-height:1.6;
+}
+.self-introduction p{
+    color:white;
+    position:absolute;
+    top:15%;
+    left:61%;
+    font-family:"Times New Roman";
+}
+.intro-text {
+    position:absolute;
+    top:22%;
+    left:60%;
+    background-color:rgb(160,216,239,0.5);
+}
+.intro-text p{
+    color:mintcream;
+    padding:20px;
+    line-height:1.6;
+    font-family:'游明朝';
+}
+.footer{
+    margin:0;
+    padding:0;
+    min-width:100%;
+    display:block;
+    height:100%;
+}
+.footer_inside {
+    list-style-type: none;
+    background-color: #333;
+    vertical-align:top;
+}
+.footer_inside p{
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}

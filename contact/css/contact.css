@@ -1,0 +1,178 @@
+*{
+    margin:0;
+    padding:0;
+   
+}
+
+html,body {
+  display: flex;
+  flex-flow: column;
+  min-height: 100vh;
+}
+main{
+    flex:1;
+    background:url("../image/city.jpg") center top/cover no-repeat;
+    min-height:720px;
+  }
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    background-color: #333;
+    text-align:center;
+    display: flex;
+    justify-content: center;
+  }
+  
+  li {
+    float: left;
+  }
+  
+  li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  
+  /* Change the link color to #111 (black) on hover */
+  li a:hover {
+    background-color: #111;
+  }
+/* 見出し用テンプレート*/
+.theme{
+    text-align:center;
+    position:relative;
+    top:50%;
+    padding:0;
+    margin-bottom:0;
+    background-image:url("../image/coolwood.png");
+    color:white;
+  }
+  .theme p {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin:0;
+    padding:0;
+    color:white;
+    font-family:"Wallpoet";
+  }
+.year_color{
+    background-color:black;
+    position:absolute;
+    left:4%;
+    top:27%;
+    width:400px;
+    height:200px;
+    opacity:0.8;
+    
+}
+.year{
+    color:white;
+    position:relative;
+    left:13%;
+    top:32%;
+    font-size:60px;
+    font-weight:bold;
+    font-family:"Codystar";
+}
+.stick{
+    position:relative;
+    background-color:white;
+    left:51.4%;
+    top:-10%;
+    width:3px;
+    height:100px;
+    opacity:0.8;
+}
+.month_color{
+    background-color:black;
+    position:absolute;
+    left:18.48%;
+    top:27%;
+    width:200px;
+    height:200px;
+    opacity:0.8;
+}
+.month{
+    color:white;
+    position:relative;
+    left:19%;
+    top:10%;
+    font-size:30px;
+    font-weight:bold;
+    font-family:"Codystar";
+}
+.day{
+    color:white;
+    position:relative;
+    left:39%;
+    top:-8%;
+    font-size:30px;
+    font-weight:bold;
+    font-family:"Codystar";
+}
+.hour{
+    color:white;
+    position:relative;
+    left:19%;
+    top:-4%;
+    font-size:30px;
+    font-weight:bold;
+    font-family:"Codystar";
+}
+.minutes{
+    color:white;
+    position:relative;
+    left:19%;
+    top:0%;
+    font-size:30px;
+    font-weight:bold;
+    font-family:"Codystar";
+}
+.seconds{
+    color:white;
+    position:relative;
+    left:19%;
+    top:4%;
+    font-size:30px;
+    font-weight:bold;
+    font-family:"Codystar";
+}
+.forms{
+    position:absolute;
+    left:60%;
+    top:25%;
+    background-color:black;
+    opacity:0.7;
+    width:400px;
+    padding:20px;
+}
+.form_design{
+    color:white;
+    line-height:1.8;
+    position:relative;
+    left:10%;
+}
+.footer{
+    margin:0;
+    padding:0;
+    min-width:100%;
+    display:block;
+    height:100%;
+}
+.footer_inside {
+    list-style-type: none;
+    background-color: #333;
+    vertical-align:top;
+}
+.footer_inside p{
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}

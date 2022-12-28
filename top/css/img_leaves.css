@@ -1,0 +1,54 @@
+/* ===== 落ち葉を表示するコンテナのスタイル ===== */
+.leaves-container {
+    position: relative;
+    height: 100vh; /* コンテナの高さ */
+    width: 100%; /* コンテナの横幅 */
+    overflow: hidden; /* コンテナからはみ出した要素を隠す */
+  }
+  
+  /* ===== 落ち葉のスタイル ===== */
+  
+  /* 落ち葉の共通スタイル */
+  .leaf {
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center center;
+    position: absolute;
+    animation: animate-leaf 8s linear;
+  }
+  
+  /* 落ち葉1 */
+  .leaf-1 {
+    background-image: url('../image/PNG/merry-christmas-vector-free-icon-set-25.png'); /* 任意のパスを記入 */
+  }
+  .leaf-2 {
+    background-image: url('../image/PNG/merry-christmas-vector-free-icon-set-27.png'); /* 任意のパスを記入 */
+  }
+  .leaf-3 {
+    background-image: url('../image/PNG/merry-christmas-vector-free-icon-set-37.png'); /* 任意のパスを記入 */
+  }
+  .leaf-4 {
+    background-image: url('../image/PNG/merry-christmas-vector-free-icon-set-38.png'); /* 任意のパスを記入 */
+  }
+  /* ===== 落ち葉が降るアニメーション ===== */
+  @keyframes animate-leaf {
+    0% {
+      opacity: 0;
+      top: 0;
+      transform: rotate(0);
+    }
+  
+    10% {
+      opacity: 1;
+    }
+  
+    90% {
+      opacity: 1;
+    }
+  
+    100% {
+      opacity: 0;
+      top: 100vh;
+      transform: rotate(1080deg);
+    }
+  }

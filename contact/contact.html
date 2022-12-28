@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,minimum-scale=0.8,maximum-scale=2">
+  <!--レスポンシブデザイン-->
+  <link rel="stylesheet" href="./css/contact.css">
+  <!--ホームページ用のcss-->
+  <link href="https://fonts.googleapis.com/css2?family=Wallpoet&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Codystar:wght@300&display=swap" rel="stylesheet">
+  <script src="./script/checker.js"></script>
+  <title>Sora's Pages</title>
+</head>
+
+<body>
+  <header>
+    <nav>
+      <ul>
+        <li><a href="../index.html">トップ</a></li>
+        <li><a href="../profile/profile.html">経歴</a></li>
+        <li><a href="../activities/activities.html">課外活動</a></li>
+        <li><a href="../skillmap/skillmap.html">スキルマップ</a></li>
+        <li><a href="../appointment/appointment.html">予約</a></li>
+        <li><a href="javascript:void(0)">コンタクト</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <div class="theme">
+      <br>
+      <br>
+      <p>
+        <font size="6"><strong>Contact</strong></font>
+      </p>
+      <br>
+      <br>
+    </div>
+    <div class="year_color">
+      <div class="year">0</div>
+      <div class="stick"></div>
+    </div>
+    <div class="clock">
+      <div class="month_color">
+        <div class="month">0</div>
+        <div class="day">0</div>
+        <div class="hour">0</div>
+        <div class="minutes">0</div>
+        <div class="seconds">0</div>
+      </div>
+    </div>
+    <script src="./script/contact_calendar.js"></script>
+    <!--カレンダーの部分-->
+    <div class="forms">
+      <div class="form_design">
+        <h2>お問い合わせ</h2>
+        <br>
+        <form method="GET" action="result.html">
+          <div>
+            <label for="kind">お問い合わせの種類</label><br>
+            <select id="kind" name="kind">
+              <option value="interview">連絡を取りたい</option>
+              <option value="request">要望を聞いてほしい</option>
+              <option value="contact">面談等・顔合わせ希望</option>
+            </select>
+          </div>
+          <br>
+          <div>
+            お急ぎですか?<br>
+            <label><input type="radio" name="first" value="yes" checked>はい</label>
+            <label><input type="radio" name="first" value="no">いいえ</label>
+          </div>
+          <br>
+          <div>
+            <label>メールアドレス<br>
+              <input type="text" name="mail_address" placeholder="example@mail.com"></label>
+          </div>
+          <br>
+          <div>
+            <label>お問い合わせの件名<br>
+              <input type="text" name="subject" placeholder="お問い合わせ"></label>
+          </div>
+          <br>
+          <div>
+            <label>お問い合わせの具体的な内容<br>
+              <textarea name="message"></textarea></label>
+          </div>
+          <div>
+            <input type="submit" name="submit" value="送信">
+          </div>
+        </form>
+      </div>
+    </div>
+  </main>
+  <footer>
+    <div class="footer_inside">
+      <p>
+        <font size="2">&copy; 2022, Sora Takaya. Allrightsreserved.</font>
+      </p>
+    </div>
+  </footer>
+</body>
+
+</html>

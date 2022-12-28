@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale = 1.0">
+  <!--レスポンシブデザイン-->
+  <link rel="stylesheet" href="./css/appointment.css">
+  <!--ホームページ用のcss-->
+  <link href="https://fonts.googleapis.com/css2?family=Wallpoet&display=swap" rel="stylesheet">
+  <title>Sora's Pages</title>
+  <style>
+    #child1 {
+      background-color: black;
+    }
+
+    #child2 {
+      background-color: whitesmoke;
+    }
+
+    @media (min-width: 600px) {
+      #parent {
+        display: flex;
+      }
+
+      #child1 {
+        flex-grow: 1;
+      }
+
+      #child2 {
+        flex-grow: 1;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <div class="wrap">
+    <header>
+      <nav>
+        <ul>
+          <li><a href="../index.html">トップ</a></li>
+          <li><a href="../profile/profile.html">経歴</a></li>
+          <li><a href="../activities/activities.html">課外活動</a></li>
+          <li><a href="../skillmap/skillmap.html">スキルマップ</a></li>
+          <li><a href="javascript:void(0)">予約</a></li>
+          <li><a href="../contact/contact.html">コンタクト</a></li>
+        </ul>
+      </nav>
+    </header>
+    <div class="theme">
+      <br>
+      <br>
+      <p>
+        <font size="6">Appointment of Meeting</font>
+      </p>
+      <br>
+      <br>
+    </div>
+    <div id="parent">
+
+      <div class="child2">
+        <br>
+        <div class="works">
+          <p>
+          </p>
+        </div>
+        <!-- Begin TimeRex Widget -->
+        <div id="timerex_calendar" data-url="https://timerex.net/s/so12ra16_d1c0/546f1201"></div>
+
+        <script id="timerex_embed" src="https://asset.timerex.net/js/embed.js"></script>
+
+        <script type="text/javascript">
+          TimerexCalendar();
+        </script>
+      </div>
+    </div>
+    <footer>
+      <div class="footer_inside">
+        <p>
+          <font size="2">&copy; 2022, Sora Takaya. Allrightsreserved.</font>
+        </p>
+      </div>
+    </footer>
+  </div>
+</body>
+
+</html>
