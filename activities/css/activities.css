@@ -172,6 +172,21 @@ a:hover, a:active, a:focus {
   background-size: cover;
 }
 
+/* 活動_メディアリンク */
+.timeline-img-medialink {
+  position: relative;
+  margin-bottom: 20px;
+  background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.4)), url("../image/medialink.JPG") center center no-repeat;
+  background-size: cover;
+  height: 250px;
+  width: 100%;
+}
+.timeline-img-medialink h2 {
+  color: #FFFFFF;
+  position: absolute;
+  bottom: 5px;
+  left: 20px;
+}
 
 /* 活動_日立製作所 */
 .timeline-img-hitachi {
