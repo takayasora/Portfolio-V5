@@ -1,100 +1,116 @@
 <!DOCTYPE html>
-<html lang="en" >
+<html lang="en">
+
 <head>
   <meta charset="UTF-8">
-  <title>CodePen - Blog Post Search + Animation  + Grid - HTML / CSS / Vanilla JS </title>
-  <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet"><link rel="stylesheet" href="./css/style.css">
+  <title>Sora's Pages</title>
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+  <link rel="stylesheet" href="./css/style.css">
 
 </head>
-<body>
-<!-- partial:index.partial.html -->
-<!-- This project is adapted from a blog tutorial series by https://youtube.com/c/CodinginPublic with Chris Pennington. -->
-<!-- Added to head in settings: -->
-<!-- <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet"> -->
 
 <body>
-  <!-- MAIN NAV -->
-  <nav class="mainNav">
-    <ul class="navList">
-      <li class="navItem"><a href="#" class="navLink">Home</a></li>
-      <li class="navItem"><a href="#" class="navLink">Recipes</a></li>
-      <li class="navItem"><a href="#" class="navLink">Blog</a></li>
-    </ul>
-  </nav>
-  
-  <!-- HEADER / HERO -->
-  <header class="hero">
-    <div class="hero-text">
-      <h1>Yummy Foods</h1>
-      <p>yum in 20 minutes or less</p>
-    </div>
-    <a href="#blogPost-header" class="hero-arrow">
-      <i class="ri-arrow-down-s-line"></i>
-    </a>
-  </header>
-  
-  <!-- SEARCH SECTION -->
-  <section id="search">
-    <h2 id="blogPost-header">Recent Blog Posts</h2>
-  <input type="text" id="blogSearch" placeholder="What sounds yummy today?">
-  </section>
-  
-  <!-- BLOG POSTS -->
-  <section class="blog-posts">
-    <div class="card-container">
-      <!-- CARD -->
-      <article class="card">
-        <p class="card-text">lorem ipsum some awesome description or recipe text to add entice you to click on this yummy recipe!</p>
-        <img href="https://www.youtube.com/watch?v=5GUaMOpfmr8" src="https://images.unsplash.com/photo-1599974579688-8dbdd335c77f?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1494&q=80" alt="street tacos" class="card-img" loading="lazy">
-        <div class="card-meta">
-          <a href="#" class="card-meta-title">Street Tacos</a>
-          <div class="card-meta-tagList">
-            <a href="#" class="a card-meta-tagList-item">dinner</a>
-            <a href="#" class="a card-meta-tagList-item">Taco Tuesday</a>
+  <!-- partial:index.partial.html -->
+  <!-- This project is adapted from a blog tutorial series by https://youtube.com/c/CodinginPublic with Chris Pennington. -->
+  <!-- Added to head in settings: -->
+  <!-- <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet"> -->
+
+  <body>
+    <!-- MAIN NAV -->
+    <nav class="mainNav">
+      <ul class="navList">
+        <li class="navItem"><a href="#" class="navLink">Home</a></li>
+        <li class="navItem"><a href="#" class="navLink">Recipes</a></li>
+        <li class="navItem"><a href="#" class="navLink">Blog</a></li>
+      </ul>
+    </nav>
+
+    <!-- HEADER / HERO -->
+    <header class="hero">
+      <div class="hero-text">
+        <h1>Yummy Foods</h1>
+        <p>yum in 20 minutes or less</p>
+      </div>
+      <a href="#blogPost-header" class="hero-arrow">
+        <i class="ri-arrow-down-s-line"></i>
+      </a>
+    </header>
+
+    <!-- SEARCH SECTION -->
+    <section id="search">
+      <h2 id="blogPost-header">Recent Blog Posts</h2>
+      <input type="text" id="blogSearch" placeholder="What sounds yummy today?">
+    </section>
+
+    <!-- BLOG POSTS -->
+    <section class="blog-posts">
+      <div class="card-container">
+        <!-- CARD -->
+        <article class="card">
+          <p class="card-text">lorem ipsum some awesome description or recipe text to add entice you to click on this
+            yummy recipe!</p>
+          <img href="https://www.youtube.com/watch?v=5GUaMOpfmr8"
+            src="https://images.unsplash.com/photo-1599974579688-8dbdd335c77f?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1494&q=80"
+            alt="street tacos" class="card-img" loading="lazy">
+          <div class="card-meta">
+            <a href="#" class="card-meta-title">Street Tacos</a>
+            <div class="card-meta-tagList">
+              <a href="#" class="a card-meta-tagList-item">dinner</a>
+              <a href="#" class="a card-meta-tagList-item">Taco Tuesday</a>
+            </div>
           </div>
-        </div>
-      </article>
-      <!-- CARD -->
-      <article class="card">
-        <p class="card-text">lorem ipsum some awesome description or recipe text to add entice you to click on this yummy recipe!</p>
-        <img src="https://images.unsplash.com/photo-1639744090731-5ede3e272308?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=807&q=80" alt="loaded potato wedges" class="card-img" loading="lazy">
-        <div class="card-meta">
-          <a href="#" class="card-meta-title">Loaded Potato Wedges</a>
-          <div class="card-meta-tagList">
-            <a href="#" class="a card-meta-tagList-item">sides</a>
-            <a href="#" class="a card-meta-tagList-item">game day</a>
+        </article>
+        <!-- CARD -->
+        <article class="card">
+          <p class="card-text">lorem ipsum some awesome description or recipe text to add entice you to click on this
+            yummy recipe!</p>
+          <img
+            src="https://images.unsplash.com/photo-1639744090731-5ede3e272308?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=807&q=80"
+            alt="loaded potato wedges" class="card-img" loading="lazy">
+          <div class="card-meta">
+            <a href="#" class="card-meta-title">Loaded Potato Wedges</a>
+            <div class="card-meta-tagList">
+              <a href="#" class="a card-meta-tagList-item">sides</a>
+              <a href="#" class="a card-meta-tagList-item">game day</a>
+            </div>
           </div>
-        </div>
-      </article>
-      <!-- CARD -->
-      <article class="card">
-        <p class="card-text">lorem ipsum some awesome description or recipe text to add entice you to click on this yummy recipe!</p>
-        <img src="https://images.unsplash.com/photo-1587314168485-3236d6710814?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=778&q=80" alt="strawberry crepes" class="card-img" loading="lazy">
-        <div class="card-meta">
-          <a href="#" class="card-meta-title">Strawberry Crepes</a>
-          <div class="card-meta-tagList">
-            <a href="#" class="a card-meta-tagList-item">breakfast</a>
-            <a href="#" class="a card-meta-tagList-item">treats</a>
+        </article>
+        <!-- CARD -->
+        <article class="card">
+          <p class="card-text">lorem ipsum some awesome description or recipe text to add entice you to click on this
+            yummy recipe!</p>
+          <img
+            src="https://images.unsplash.com/photo-1587314168485-3236d6710814?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=778&q=80"
+            alt="strawberry crepes" class="card-img" loading="lazy">
+          <div class="card-meta">
+            <a href="#" class="card-meta-title">Strawberry Crepes</a>
+            <div class="card-meta-tagList">
+              <a href="#" class="a card-meta-tagList-item">breakfast</a>
+              <a href="#" class="a card-meta-tagList-item">treats</a>
+            </div>
           </div>
-        </div>
-      </article>
-      <!-- CARD -->
-      <article class="card">
-        <p class="card-text">lorem ipsum some awesome description or recipe text to add entice you to click on this yummy recipe!</p>
-        <img src="https://images.unsplash.com/photo-1499636136210-6f4ee915583e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=464&q=80" alt="ooey gooey cookies" class="card-img" loading="lazy">
-        <div class="card-meta">
-          <a href="#" class="card-meta-title">Ooey Gooey Cookies</a>
-          <div class="card-meta-tagList">
-            <a href="#" class="a card-meta-tagList-item">treats</a>
-            <a href="#" class="a card-meta-tagList-item">chocolate</a>
+        </article>
+        <!-- CARD -->
+        <article class="card">
+          <p class="card-text">lorem ipsum some awesome description or recipe text to add entice you to click on this
+            yummy recipe!</p>
+          <img
+            src="https://images.unsplash.com/photo-1499636136210-6f4ee915583e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=464&q=80"
+            alt="ooey gooey cookies" class="card-img" loading="lazy">
+          <div class="card-meta">
+            <a href="#" class="card-meta-title">Ooey Gooey Cookies</a>
+            <div class="card-meta-tagList">
+              <a href="#" class="a card-meta-tagList-item">treats</a>
+              <a href="#" class="a card-meta-tagList-item">chocolate</a>
+            </div>
           </div>
-        </div>
-      </article>
-    </div>
-  </section>
-</body>
-<!-- partial -->
-  <script  src="./script/script.js"></script>
+        </article>
+      </div>
+    </section>
+  </body>
+  <!-- partial -->
+  <script src="./script/script.js"></script>
 
 </body>
+
 </html>
