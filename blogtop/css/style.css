@@ -104,10 +104,10 @@ a {
   display: grid;
   place-items: center;
   color: var(--neutral-lt);
-  background: url("https://images.unsplash.com/photo-1571805381873-a5e51f692c16?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80");
+  background: url("../image/background.jpg");
   background-size: cover;
   background-position: center center;
-  height: 100vh;
+  height: 60vh;
   text-align: center;
 }
 
@@ -167,7 +167,9 @@ a {
 /* SEARCH */
 #search {
   padding: 20px;
+  text-align: -webkit-center;
 }
+
 
 input {
   display: block;
