@@ -287,49 +287,49 @@ p.code-title {
 }
 
 .python-desc.desc-active::after {
-  background: url(./image/python.webp);
+  background: url(../image/python.webp);
   background-repeat: no-repeat;
   background-size: contain;
   background-position: right center;
 }
 
 .java-desc.desc-active::after {
-  background: url(./image/java.png);
+  background: url(../image/java.png);
   background-repeat: no-repeat;
   background-size: contain;
   background-position: right center;
 }
 
 .c-desc.desc-active::after {
-  background: url(./image/c.png);
+  background: url(../image/c.png);
   background-repeat: no-repeat;
   background-size: contain;
   background-position: right center;
 }
 
 .vba-desc.desc-active::after {
-  background: url(./image/vba.png);
+  background: url(../image/vba.png);
   background-repeat: no-repeat;
   background-size: contain;
   background-position: right center;
 }
 
 .sql-desc.desc-active::after {
-  background: url(./image/sql2.png);
+  background: url(../image/sql2.png);
   background-repeat: no-repeat;
   background-size: contain;
   background-position: right center;
 }
 
 .front-desc.desc-active::after {
-  background: url(./image/html.png);
+  background: url(../image/html.png);
   background-repeat: no-repeat;
   background-size: contain;
   background-position: right center;
 }
 
 .back-desc.desc-active::after {
-  background: url(./image/php.png);
+  background: url(../image/php.png);
   background-repeat: no-repeat;
   background-size: contain;
   background-position: right center;
