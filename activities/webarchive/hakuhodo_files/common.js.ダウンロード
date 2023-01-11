@@ -1,0 +1,364 @@
+
+(function ($) {
+  
+  initHamburgerMenu()
+  scrollBar()
+  naviFix()
+  initAnchor()
+  backHistory()
+  modalYT()
+
+}(jQuery));
+
+// Bind Hamburger Menu Event
+function initHamburgerMenu() {
+  $('.header__hamburger').click(function() {
+    // fix layout -> disable scroll
+    window.currentTop = $(window).scrollTop()
+    $('body').css({
+      'position': 'fixed',
+      'top': -window.currentTop,
+      'width': '100%',
+    })
+    // open
+    $('body').addClass('menu-opened')
+    $('.menu').addClass('menu-opened')
+    // $('.menu').fadeIn()
+    $('.menu').show()
+    // 
+    // $('.menu .item').css({'opacity': 0, 'transform': 'translateY(10px)'})
+    setTimeout(function() {
+      $('.menu .item').each(function() {
+        $(this).addClass('transform')
+        // $(this).animate({opacity: 1}, 300)
+      })
+    }, 10)
+
+    if ($(window).width() <= 750) {
+      $('.menu').css({'height': $(window).height()})
+      $(window).on('resize', function() {
+        if ($('.menu').hasClass('menu-opened')) {
+          $('.menu').css({'height': $(window).height()})
+        }
+      })
+    }
+  })
+
+  $('.icon-close').click(function() {
+    $('body').css({
+      'position': ''
+    })
+    $(window).scrollTop(window.currentTop)
+    // close
+    $('body').removeClass('menu-opened')
+    $('.menu').removeClass('menu-opened')
+    $('.menu .item').removeClass('transform')
+    // reset position menu
+    // $('.menu').animate({
+    //   'scrollTop': 0
+    // }, 'fast')
+    // $('.menu').fadeOut()
+    $('.menu').hide()
+    $('.menu').css({'height': ''})
+  })
+
+
+  $('.menu .item--anchor').on('click', function(e) {
+    e.preventDefault();
+    
+    $('body').css({
+      'position': ''
+    })
+    $(window).scrollTop(window.currentTop)
+    // close
+    $('body').removeClass('menu-opened')
+    $('.menu').removeClass('menu-opened')
+    $('.menu .item').removeClass('transform')
+    $('.menu').hide()
+    $('.menu').css({'height': ''})
+
+    if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') && location.hostname == this.hostname) {
+      var target = $(this.hash);
+      target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
+      if (target.length) {
+        $('html,body').animate({
+          scrollTop: target.offset().top 
+        }, 800);
+        return false;
+      }
+    }
+  })
+}
+
+// scroll image
+function scrollBar() {
+  $(window).on("load", function(){
+    if ($('.img-scroll').length > 0) {
+      $('.img-scroll').mCustomScrollbar({
+        axis:"x"
+      });
+  
+      $('.img-scroll').mCustomScrollbar("scrollTo",100,{
+        moveDragger:true
+      });
+    }
+  })
+}
+
+// navi head
+function naviFix() {
+  if( $(window).width() >= 768 ){
+    $(window).scroll(function(){
+      var $scroll = $(window).scrollTop();
+      if( $scroll > 150 ){
+        $('#header-navi-1').css({'display': 'none'})
+        $('#header-navi-2').css({'display': 'none'})
+        $('.header').addClass('is-scroll')
+      } else {
+        $('.header').removeClass('is-scroll')
+      }
+    });
+  }
+}
+
+// initAnchor
+function initAnchor() {
+  $('.anchor-link').click(function(e) {
+    if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') && location.hostname == this.hostname) {
+      var target = $(this.hash);
+      target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
+      if (target.length) {
+        $('html,body').animate({
+          scrollTop: target.offset().top 
+        }, 800);
+        return false;
+      }
+    }
+  });
+}
+
+function backHistory() {
+  $('.btn-back').on('click', function(e) {
+    e.preventDefault();
+    var loca = "/recruit/jobs/";
+    var referer = document.referrer;
+
+    if (referer == "") {
+      window.location.href = loca
+    } else {
+      history.back()
+    }
+  })
+}
+
+
+(function ($) {
+  var $popup;
+  var store = localStorage.getItem('offsetY') ? localStorage.getItem('offsetY') : '';
+
+  function openModal() {
+    if ($popup) {
+      $popup.addClass('is-open');
+      $('body').css({
+        position: 'fixed',
+        'top': -offsetY + 'px',
+        width: '100%'
+      });
+      $popup.show();
+    }
+  }
+
+  function closeModal() {
+    offsetY = $('body').css('top').split('px')[0];
+    $('body').css('position', 'static');
+    $(window).scrollTop(-offsetY);
+    if ($popup) {
+      $popup.removeClass('is-open');
+      $popup.hide();
+    }
+  }
+
+  $('.modal-open').click(function() {
+    $popup = $($(this).data('id'))
+    offsetY = window.pageYOffset;
+    localStorage.setItem('offsetY', offsetY)
+    if ($popup) {
+      if ($popup.hasClass('is-open')) {
+        closeModal();
+      } else {
+        openModal();
+      }
+    }
+  });
+
+  $('.modal-close').click(function(e) {
+    history.replaceState("", document.title, window.location.pathname);
+    
+    if (store != '') {
+      localStorage.removeItem('offsetY')
+    }
+    offsetY = window.pageYOffset;
+    closeModal();
+  });
+}(jQuery));
+
+
+
+(function($) {
+  $('.header__navi .item:nth-child(1)').on('mouseover', function() {
+    var el = this.getBoundingClientRect()
+    // var offset = $($(this).find('img')[0]).offset()
+    $('#header-navi-1').css({'display': 'block', 'top': el.y, 'left': el.x, 'width': el.width, 'height': el.height}).addClass('animated')
+  })
+  $('.header__navi .item:nth-child(1)').on('mouseleave', function() {
+    $('#header-navi-1').css({'display': 'none'}).removeClass('animated')
+  })
+  $('.header__navi .item:nth-child(2)').on('mouseover', function() {
+    var el = this.getBoundingClientRect()
+    // var offset = $($(this).find('img')[0]).offset()
+    $('#header-navi-2').css({'display': 'block', 'top': el.y, 'left': el.x, 'width': el.width, 'height': el.height}).addClass('animated')
+  })
+  $('.header__navi .item:nth-child(2)').on('mouseleave', function() {
+    $('#header-navi-2').css({'display': 'none'}).removeClass('animated')
+  })
+}(jQuery))
+
+// detect menu theme
+$(function() {
+  $(window).on('scroll', function() {
+    detectHeadTheme()
+  })
+  var sectionMenuTheme = $('[data-menu-theme]');
+  function detectHeadTheme() {
+    if (sectionMenuTheme.length > 0) {
+      var currentTop = $(window).scrollTop()
+      var menuTheme = ''
+      if (currentTop < $(sectionMenuTheme[0]).offset().top) {
+        menuTheme = ''
+      }
+      sectionMenuTheme.each(function(index) {
+        if (currentTop >= $(sectionMenuTheme[index]).offset().top) {
+          menuTheme = $(sectionMenuTheme[index]).data('menu-theme')
+        }
+      })
+      $('body').attr('data-menu-theme', menuTheme)
+    }
+  }
+  detectHeadTheme()
+});
+
+// detect loading screen
+function checkLoading() {
+  var $loadingScreen = $('#loading-screen')
+  if ($loadingScreen.length <= 0) return;
+  if (document.readyState === "complete") {
+    $loadingScreen.find('.progress-bar__color').addClass('complete')
+    setTimeout(function() {
+      $loadingScreen.fadeOut()
+    }, 1000)
+    return true
+  }
+  setTimeout(function() {
+    checkLoading()
+  }, 100)
+}
+checkLoading()
+
+
+// scroll fixed navi
+function scrollFixNavi() {
+  var hNav = Math.floor($('.content-right__anchor').outerHeight());
+
+  $(window).scroll(function() {
+    var $scrollTop = Math.floor($(window).scrollTop()) + hNav;
+    
+    $('.content-right__anchor a').each(function() {
+      var currLink = $(this);
+      var refElement = $(this.hash);
+      console.log($scrollTop + $(window).outerHeight())
+      console.log($('.footer').offset().top)
+      if(refElement.length > 0){
+        var offsetTop = Math.floor(refElement.offset().top)
+        var refElementHeight = Math.floor(refElement.outerHeight())
+        if (offsetTop <= $scrollTop && $scrollTop < offsetTop + refElementHeight) {
+          if ($scrollTop + $(window).outerHeight() > $('.footer').offset().top) {
+            $('.navi-anchor__item').removeClass("is-active");
+            $('.navi-anchor__item:last-child').addClass("is-active");
+          } else {
+            currLink.addClass("is-active");
+          }
+        } else {
+          if ($scrollTop + $(window).outerHeight() < $('.footer').offset().top) {
+            currLink.removeClass("is-active");
+          }
+        }
+      }
+    });
+  }).scroll();
+}
+
+function clickCloseModal() {
+  $('body').on('click', function(e) {
+    if (!$(e.target).is('.modal-open, .modal-open *, .modal__content, .modal__content *')) {
+      $('.modal__item').each(function() {
+        if ($(this).hasClass('is-open')) {
+          var offsetY = $('body').css('top').split('px')[0];
+          $('body').css('position', 'static');
+          $(window).scrollTop(-offsetY);
+  
+          $(this).removeClass('is-open');
+          $(this).hide();
+        }
+      })
+    }
+  });
+}
+
+function modalYT() {
+  var ytPlayer, 
+  ytPlayerCl, 
+  ytPlayerArr = [];
+
+  function onYouTubeIframeAPIReadyEach() {
+  $(".modal-youtube").on("click", function() {
+    var $start = $(this),
+        $modal = $(".js-modalArea"),
+        $video = $modal.find(".js-movieArea"),
+        mid = $video.attr("id"),
+        ytid = $start.attr("data-yt");
+    scrTop = $(window).scrollTop();
+    $("body").addClass("is-modal");
+    $("#modal-video").addClass("active");
+    $modal.addClass("current");
+    ytPlayerCl = $(".js-modalArea.current").find(".js-movieArea").clone();
+    ytPlayer = new YT.Player(
+      mid, {
+        videoId: ytid,
+        playerVars: {
+          loop: 0,
+          rel: 0,
+        },
+        events: {
+          "onReady": onPlayerReady,
+        },
+      }
+    );
+    function onPlayerReady(event) {
+      event.target.playVideo();
+    }
+  });
+
+  $(".js-modalClose").on("click", function() {
+    $("body").removeClass("is-modal");
+    $(window).scrollTop(scrTop);
+    $("#modal-video").removeClass("active");
+    $(".js-modalArea.current").find("iframe").detach();
+    $(".js-modalArea.current").append(ytPlayerCl);
+    $(".js-modalArea").removeClass("current");
+  });
+  }
+
+  window.addEventListener("load", function() {
+    if ($("[data-yt]").length) onYouTubeIframeAPIReadyEach();
+  });
+}
