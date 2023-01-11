@@ -364,6 +364,22 @@ a:hover, a:active, a:focus {
   left: 20px;
 }
 
+/* 活動_nri */
+.timeline-img-nri {
+  position: relative;
+  margin-bottom: 20px;
+  background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.4)), url("../image/nri.JPG") center center no-repeat;
+  background-size: cover;
+  height: 250px;
+  width: 100%;
+}
+.timeline-img-nri h2 {
+  color: #FFFFFF;
+  position: absolute;
+  bottom: 5px;
+  left: 20px;
+}
+
 /* 活動_hakuhodo */
 .timeline-img-hakuhodo {
   position: relative;
