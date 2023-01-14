@@ -19,16 +19,16 @@
   
   /* 落ち葉1 */
   .leaf-1 {
-    background-image: url('../image/PNG/merry-christmas-vector-free-icon-set-25.png'); /* 任意のパスを記入 */
+    background-image: url('../image/PNG/1.png');
   }
   .leaf-2 {
-    background-image: url('../image/PNG/merry-christmas-vector-free-icon-set-27.png'); /* 任意のパスを記入 */
+    background-image: url('../image/PNG/2.png');
   }
   .leaf-3 {
-    background-image: url('../image/PNG/merry-christmas-vector-free-icon-set-37.png'); /* 任意のパスを記入 */
+    background-image: url('../image/PNG/3.png');
   }
   .leaf-4 {
-    background-image: url('../image/PNG/merry-christmas-vector-free-icon-set-38.png'); /* 任意のパスを記入 */
+    background-image: url('../image/PNG/4.png');
   }
   /* ===== 落ち葉が降るアニメーション ===== */
   @keyframes animate-leaf {
