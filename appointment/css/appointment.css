@@ -76,17 +76,13 @@ ul {
   position:relative;
   left:-2%;
 }
-.child2 {
-  text-align:center;
-  padding: 0.5em 1em;
-  margin: 0 0;
-  box-shadow: 0 3px 5px rgba(0, 0, 0, 0.22);
-  background-image:url("../image/ichou.jpg");
-  width:100%;
-}
 .works{
   color:white;
   font-family:"Gill Sans";
+}
+
+.widget{
+  background-image: url("../image/background.jpg");
 }
 .script1{
   box-shadow: 0 3px 5px rgba(0, 0, 0, 0.22);

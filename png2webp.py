@@ -18,10 +18,11 @@ def cnvt2jpg(s, i):
     im = Image.open(s).convert("RGB")
     im.save(str(format(i, "04"))+".jpg", "jpeg")
 
-us
+
 def cnvt2png(s, i):
-    im = Image.open(s).convert("RGB")
-    im.save(str(format(i, "04"))+".png", "png")
+    print(s)
+    # im = Image.open(s).convert("RGB")
+    # im.save(str(format(i, "04"))+".png", "png")
 
 
 def cnvt2webp(s, i):
