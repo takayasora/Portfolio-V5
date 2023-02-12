@@ -1,0 +1,76 @@
+const userData = {
+  segment: "default",
+};
+function initAnswers() {
+  const apiKey = "c9eac08e6d2d491c1c69b1fdeaffbe53";
+  const experienceKey = "jobsearch";
+  const experienceVersion = "PRODUCTION";
+  const locale = "ja";
+  const businessId = "3819198";
+  ANSWERS.init({
+    apiKey: apiKey,
+    experienceKey: experienceKey,
+    experienceVersion: experienceVersion,
+    locale: locale,
+    businessId: businessId,
+    templateBundle: TemplateBundle.default,
+    onReady: function() {
+      ANSWERS.addComponent("SearchBar", {
+        container: ".search_form-pc",
+        name: "search-bar-pc",
+        // redirectUrl: "http://13.112.183.69/search/", 
+        redirectUrl: "https://fujitsu.recruiting.jp.fujitsu.com/search/", 
+        placeholderText: "何をお探しですか？",
+        customIconUrl: "https://career.fujitsu.pagescdn.com/static/assets/images/search.png",
+        // submitIcon: "magnifying_glass",
+        voiceSearch: {
+          enabled: true,
+          customMicIconUrl: "https://career.fujitsu.pagescdn.com/static/assets/images/voice.png",
+        },
+      });
+      ANSWERS.addComponent("SearchBar", {
+        container: ".search_form-sp",
+        name: "search-bar-sp",
+        // redirectUrl: "http://13.112.183.69/search/", 
+        redirectUrl: "https://fujitsu.recruiting.jp.fujitsu.com/search/", 
+        placeholderText: "何をお探しですか？",
+        // submitIcon: "magnifying_glass",
+        customIconUrl: "https://career.fujitsu.pagescdn.com/static/assets/images/search.png",
+        voiceSearch: {
+          enabled: true,
+          customMicIconUrl: "https://career.fujitsu.pagescdn.com/static/assets/images/voice.png",
+        },
+      });
+      this.setContext(userData);
+
+      var url = 'https://liveapi-cached.yext.com/v2/accounts/me/answers/autocomplete';
+      url += '?v=20220101';
+      url += '&api_key=' + apiKey;
+      url += '&sessionTrackingEnabled=false';
+      url += '&experienceKey=' + experienceKey;
+      url += '&input=';
+      url += '&version=' + experienceVersion;
+      url += '&locale=' + locale;
+      axios.get(url).then(function(response) {
+        const strings = response.data.response.results.map(function(r) {
+          return r.value;
+        });
+        var options = {
+          strings: strings,
+          showCursor: true,
+          cursorChar: "|",
+          typeSpeed: 45,
+          backSpeed: 20,
+          smartBackspace: true,
+          loop: true,
+          startDelay: 500,
+          backDelay: 2000,
+          attr: "placeholder",
+        };
+        options.strings.unshift("　");
+        var typed1 = new Typed("#yxt-SearchBar-input--search-bar-pc", options);
+        var typed2 = new Typed("#yxt-SearchBar-input--search-bar-sp", options);
+      });
+    },
+  });
+}

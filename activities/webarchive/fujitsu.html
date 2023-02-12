@@ -1,0 +1,675 @@
+<!DOCTYPE html>
+<!-- saved from url=(0052)https://fujitsu.recruiting.jp.fujitsu.com/hackathon/ -->
+<html lang="ja" data-script-enabled="true" data-uw-w-loader=""><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><style type="text/css">.swal-icon--error{border-color:#f27474;-webkit-animation:animateErrorIcon .5s;animation:animateErrorIcon .5s}.swal-icon--error__x-mark{position:relative;display:block;-webkit-animation:animateXMark .5s;animation:animateXMark .5s}.swal-icon--error__line{position:absolute;height:5px;width:47px;background-color:#f27474;display:block;top:37px;border-radius:2px}.swal-icon--error__line--left{-webkit-transform:rotate(45deg);transform:rotate(45deg);left:17px}.swal-icon--error__line--right{-webkit-transform:rotate(-45deg);transform:rotate(-45deg);right:16px}@-webkit-keyframes animateErrorIcon{0%{-webkit-transform:rotateX(100deg);transform:rotateX(100deg);opacity:0}to{-webkit-transform:rotateX(0deg);transform:rotateX(0deg);opacity:1}}@keyframes animateErrorIcon{0%{-webkit-transform:rotateX(100deg);transform:rotateX(100deg);opacity:0}to{-webkit-transform:rotateX(0deg);transform:rotateX(0deg);opacity:1}}@-webkit-keyframes animateXMark{0%{-webkit-transform:scale(.4);transform:scale(.4);margin-top:26px;opacity:0}50%{-webkit-transform:scale(.4);transform:scale(.4);margin-top:26px;opacity:0}80%{-webkit-transform:scale(1.15);transform:scale(1.15);margin-top:-6px}to{-webkit-transform:scale(1);transform:scale(1);margin-top:0;opacity:1}}@keyframes animateXMark{0%{-webkit-transform:scale(.4);transform:scale(.4);margin-top:26px;opacity:0}50%{-webkit-transform:scale(.4);transform:scale(.4);margin-top:26px;opacity:0}80%{-webkit-transform:scale(1.15);transform:scale(1.15);margin-top:-6px}to{-webkit-transform:scale(1);transform:scale(1);margin-top:0;opacity:1}}.swal-icon--warning{border-color:#f8bb86;-webkit-animation:pulseWarning .75s infinite alternate;animation:pulseWarning .75s infinite alternate}.swal-icon--warning__body{width:5px;height:47px;top:10px;border-radius:2px;margin-left:-2px}.swal-icon--warning__body,.swal-icon--warning__dot{position:absolute;left:50%;background-color:#f8bb86}.swal-icon--warning__dot{width:7px;height:7px;border-radius:50%;margin-left:-4px;bottom:-11px}@-webkit-keyframes pulseWarning{0%{border-color:#f8d486}to{border-color:#f8bb86}}@keyframes pulseWarning{0%{border-color:#f8d486}to{border-color:#f8bb86}}.swal-icon--success{border-color:#a5dc86}.swal-icon--success:after,.swal-icon--success:before{content:"";border-radius:50%;position:absolute;width:60px;height:120px;background:#fff;-webkit-transform:rotate(45deg);transform:rotate(45deg)}.swal-icon--success:before{border-radius:120px 0 0 120px;top:-7px;left:-33px;-webkit-transform:rotate(-45deg);transform:rotate(-45deg);-webkit-transform-origin:60px 60px;transform-origin:60px 60px}.swal-icon--success:after{border-radius:0 120px 120px 0;top:-11px;left:30px;-webkit-transform:rotate(-45deg);transform:rotate(-45deg);-webkit-transform-origin:0 60px;transform-origin:0 60px;-webkit-animation:rotatePlaceholder 4.25s ease-in;animation:rotatePlaceholder 4.25s ease-in}.swal-icon--success__ring{width:80px;height:80px;border:4px solid hsla(98,55%,69%,.2);border-radius:50%;box-sizing:content-box;position:absolute;left:-4px;top:-4px;z-index:2}.swal-icon--success__hide-corners{width:5px;height:90px;background-color:#fff;padding:1px;position:absolute;left:28px;top:8px;z-index:1;-webkit-transform:rotate(-45deg);transform:rotate(-45deg)}.swal-icon--success__line{height:5px;background-color:#a5dc86;display:block;border-radius:2px;position:absolute;z-index:2}.swal-icon--success__line--tip{width:25px;left:14px;top:46px;-webkit-transform:rotate(45deg);transform:rotate(45deg);-webkit-animation:animateSuccessTip .75s;animation:animateSuccessTip .75s}.swal-icon--success__line--long{width:47px;right:8px;top:38px;-webkit-transform:rotate(-45deg);transform:rotate(-45deg);-webkit-animation:animateSuccessLong .75s;animation:animateSuccessLong .75s}@-webkit-keyframes rotatePlaceholder{0%{-webkit-transform:rotate(-45deg);transform:rotate(-45deg)}5%{-webkit-transform:rotate(-45deg);transform:rotate(-45deg)}12%{-webkit-transform:rotate(-405deg);transform:rotate(-405deg)}to{-webkit-transform:rotate(-405deg);transform:rotate(-405deg)}}@keyframes rotatePlaceholder{0%{-webkit-transform:rotate(-45deg);transform:rotate(-45deg)}5%{-webkit-transform:rotate(-45deg);transform:rotate(-45deg)}12%{-webkit-transform:rotate(-405deg);transform:rotate(-405deg)}to{-webkit-transform:rotate(-405deg);transform:rotate(-405deg)}}@-webkit-keyframes animateSuccessTip{0%{width:0;left:1px;top:19px}54%{width:0;left:1px;top:19px}70%{width:50px;left:-8px;top:37px}84%{width:17px;left:21px;top:48px}to{width:25px;left:14px;top:45px}}@keyframes animateSuccessTip{0%{width:0;left:1px;top:19px}54%{width:0;left:1px;top:19px}70%{width:50px;left:-8px;top:37px}84%{width:17px;left:21px;top:48px}to{width:25px;left:14px;top:45px}}@-webkit-keyframes animateSuccessLong{0%{width:0;right:46px;top:54px}65%{width:0;right:46px;top:54px}84%{width:55px;right:0;top:35px}to{width:47px;right:8px;top:38px}}@keyframes animateSuccessLong{0%{width:0;right:46px;top:54px}65%{width:0;right:46px;top:54px}84%{width:55px;right:0;top:35px}to{width:47px;right:8px;top:38px}}.swal-icon--info{border-color:#c9dae1}.swal-icon--info:before{width:5px;height:29px;bottom:17px;border-radius:2px;margin-left:-2px}.swal-icon--info:after,.swal-icon--info:before{content:"";position:absolute;left:50%;background-color:#c9dae1}.swal-icon--info:after{width:7px;height:7px;border-radius:50%;margin-left:-3px;top:19px}.swal-icon{width:80px;height:80px;border-width:4px;border-style:solid;border-radius:50%;padding:0;position:relative;box-sizing:content-box;margin:20px auto}.swal-icon:first-child{margin-top:32px}.swal-icon--custom{width:auto;height:auto;max-width:100%;border:none;border-radius:0}.swal-icon img{max-width:100%;max-height:100%}.swal-title{color:rgba(0,0,0,.65);font-weight:600;text-transform:none;position:relative;display:block;padding:13px 16px;font-size:27px;line-height:normal;text-align:center;margin-bottom:0}.swal-title:first-child{margin-top:26px}.swal-title:not(:first-child){padding-bottom:0}.swal-title:not(:last-child){margin-bottom:13px}.swal-text{font-size:16px;position:relative;float:none;line-height:normal;vertical-align:top;text-align:left;display:inline-block;margin:0;padding:0 10px;font-weight:400;color:rgba(0,0,0,.64);max-width:calc(100% - 20px);overflow-wrap:break-word;box-sizing:border-box}.swal-text:first-child{margin-top:45px}.swal-text:last-child{margin-bottom:45px}.swal-footer{text-align:right;padding-top:13px;margin-top:13px;padding:13px 16px;border-radius:inherit;border-top-left-radius:0;border-top-right-radius:0}.swal-button-container{margin:5px;display:inline-block;position:relative}.swal-button{background-color:#7cd1f9;color:#fff;border:none;box-shadow:none;border-radius:5px;font-weight:600;font-size:14px;padding:10px 24px;margin:0;cursor:pointer}.swal-button:not([disabled]):hover{background-color:#78cbf2}.swal-button:active{background-color:#70bce0}.swal-button:focus{outline:none;box-shadow:0 0 0 1px #fff,0 0 0 3px rgba(43,114,165,.29)}.swal-button[disabled]{opacity:.5;cursor:default}.swal-button::-moz-focus-inner{border:0}.swal-button--cancel{color:#555;background-color:#efefef}.swal-button--cancel:not([disabled]):hover{background-color:#e8e8e8}.swal-button--cancel:active{background-color:#d7d7d7}.swal-button--cancel:focus{box-shadow:0 0 0 1px #fff,0 0 0 3px rgba(116,136,150,.29)}.swal-button--danger{background-color:#e64942}.swal-button--danger:not([disabled]):hover{background-color:#df4740}.swal-button--danger:active{background-color:#cf423b}.swal-button--danger:focus{box-shadow:0 0 0 1px #fff,0 0 0 3px rgba(165,43,43,.29)}.swal-content{padding:0 20px;margin-top:20px;font-size:medium}.swal-content:last-child{margin-bottom:20px}.swal-content__input,.swal-content__textarea{-webkit-appearance:none;background-color:#fff;border:none;font-size:14px;display:block;box-sizing:border-box;width:100%;border:1px solid rgba(0,0,0,.14);padding:10px 13px;border-radius:2px;transition:border-color .2s}.swal-content__input:focus,.swal-content__textarea:focus{outline:none;border-color:#6db8ff}.swal-content__textarea{resize:vertical}.swal-button--loading{color:transparent}.swal-button--loading~.swal-button__loader{opacity:1}.swal-button__loader{position:absolute;height:auto;width:43px;z-index:2;left:50%;top:50%;-webkit-transform:translateX(-50%) translateY(-50%);transform:translateX(-50%) translateY(-50%);text-align:center;pointer-events:none;opacity:0}.swal-button__loader div{display:inline-block;float:none;vertical-align:baseline;width:9px;height:9px;padding:0;border:none;margin:2px;opacity:.4;border-radius:7px;background-color:hsla(0,0%,100%,.9);transition:background .2s;-webkit-animation:swal-loading-anim 1s infinite;animation:swal-loading-anim 1s infinite}.swal-button__loader div:nth-child(3n+2){-webkit-animation-delay:.15s;animation-delay:.15s}.swal-button__loader div:nth-child(3n+3){-webkit-animation-delay:.3s;animation-delay:.3s}@-webkit-keyframes swal-loading-anim{0%{opacity:.4}20%{opacity:.4}50%{opacity:1}to{opacity:.4}}@keyframes swal-loading-anim{0%{opacity:.4}20%{opacity:.4}50%{opacity:1}to{opacity:.4}}.swal-overlay{position:fixed;top:0;bottom:0;left:0;right:0;text-align:center;font-size:0;overflow-y:auto;background-color:rgba(0,0,0,.4);z-index:10000;pointer-events:none;opacity:0;transition:opacity .3s}.swal-overlay:before{content:" ";display:inline-block;vertical-align:middle;height:100%}.swal-overlay--show-modal{opacity:1;pointer-events:auto}.swal-overlay--show-modal .swal-modal{opacity:1;pointer-events:auto;box-sizing:border-box;-webkit-animation:showSweetAlert .3s;animation:showSweetAlert .3s;will-change:transform}.swal-modal{width:478px;opacity:0;pointer-events:none;background-color:#fff;text-align:center;border-radius:5px;position:static;margin:20px auto;display:inline-block;vertical-align:middle;-webkit-transform:scale(1);transform:scale(1);-webkit-transform-origin:50% 50%;transform-origin:50% 50%;z-index:10001;transition:opacity .2s,-webkit-transform .3s;transition:transform .3s,opacity .2s;transition:transform .3s,opacity .2s,-webkit-transform .3s}@media (max-width:500px){.swal-modal{width:calc(100% - 20px)}}@-webkit-keyframes showSweetAlert{0%{-webkit-transform:scale(1);transform:scale(1)}1%{-webkit-transform:scale(.5);transform:scale(.5)}45%{-webkit-transform:scale(1.05);transform:scale(1.05)}80%{-webkit-transform:scale(.95);transform:scale(.95)}to{-webkit-transform:scale(1);transform:scale(1)}}@keyframes showSweetAlert{0%{-webkit-transform:scale(1);transform:scale(1)}1%{-webkit-transform:scale(.5);transform:scale(.5)}45%{-webkit-transform:scale(1.05);transform:scale(1.05)}80%{-webkit-transform:scale(.95);transform:scale(.95)}to{-webkit-transform:scale(1);transform:scale(1)}}</style>
+    
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width">
+  <title>データの力で世界を変える 富士通 データサイエンス部 開校</title>
+  <meta name="description" content="ハッカソンイベントを通じて、参加者それぞれがアイディアを持ち寄り、実際にカタチにしていきます。">
+  <meta name="keywords" content="データサイエンス部,新卒学生向け インターンシップ情報,富士通インターンシップ,富士通, FUJITSU, 採用情報, キャリア採用, 中途採用, 経験者採用, 募集要項, 応募の流れ">
+  <link rel="apple-touch-icon" href="https://fujitsu.recruiting.jp.fujitsu.com/wp-content/themes/fujitsu_recruit2022/assets/images/apple-touch-icon.png">
+  <meta property="og:site_name" content="富士通株式会社採用ホームページ">
+  <meta property="og:type" content="article">
+    <meta property="og:url" content="https://fujitsu.recruiting.jp.fujitsu.com/hackathon/">
+  <meta property="og:image" content="https://fujitsu.recruiting.jp.fujitsu.com/wp-content/themes/fujitsu_recruit2022/assets/images/ogp-image.png">
+  <meta property="og:title" content="データの力で世界を変える 富士通 データサイエンス部 開校">
+  <meta property="og:description" content="ハッカソンイベントを通じて、参加者それぞれがアイディアを持ち寄り、実際にカタチにしていきます。">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="データの力で世界を変える 富士通 データサイエンス部 開校">
+  <meta name="twitter:description" content="ハッカソンイベントを通じて、参加者それぞれがアイディアを持ち寄り、実際にカタチにしていきます。">
+  <meta name="twitter:image" content="https://fujitsu.recruiting.jp.fujitsu.com/wp-content/themes/fujitsu_recruit2022/assets/images/ogp-image.png">
+  <!-- Google Tag Manager -->
+  <script type="text/javascript" async="" src="./fujitsu_files/js"></script><script type="text/javascript" async="" src="./fujitsu_files/analytics.js.ダウンロード"></script><script async="" src="./fujitsu_files/gtm.js.ダウンロード"></script><script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+  new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+  j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+  'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+  })(window,document,'script','dataLayer','GTM-MLMKC2K');</script>
+  <!-- End Google Tag Manager -->
+  <meta name="robots" content="max-image-preview:large">
+<link rel="stylesheet" id="wp-block-library-css" href="./fujitsu_files/style.min.css" type="text/css" media="all">
+<link rel="stylesheet" id="classic-theme-styles-css" href="./fujitsu_files/classic-themes.min.css" type="text/css" media="all">
+<style id="global-styles-inline-css" type="text/css">
+body{--wp--preset--color--black: #000000;--wp--preset--color--cyan-bluish-gray: #abb8c3;--wp--preset--color--white: #ffffff;--wp--preset--color--pale-pink: #f78da7;--wp--preset--color--vivid-red: #cf2e2e;--wp--preset--color--luminous-vivid-orange: #ff6900;--wp--preset--color--luminous-vivid-amber: #fcb900;--wp--preset--color--light-green-cyan: #7bdcb5;--wp--preset--color--vivid-green-cyan: #00d084;--wp--preset--color--pale-cyan-blue: #8ed1fc;--wp--preset--color--vivid-cyan-blue: #0693e3;--wp--preset--color--vivid-purple: #9b51e0;--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple: linear-gradient(135deg,rgba(6,147,227,1) 0%,rgb(155,81,224) 100%);--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan: linear-gradient(135deg,rgb(122,220,180) 0%,rgb(0,208,130) 100%);--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange: linear-gradient(135deg,rgba(252,185,0,1) 0%,rgba(255,105,0,1) 100%);--wp--preset--gradient--luminous-vivid-orange-to-vivid-red: linear-gradient(135deg,rgba(255,105,0,1) 0%,rgb(207,46,46) 100%);--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray: linear-gradient(135deg,rgb(238,238,238) 0%,rgb(169,184,195) 100%);--wp--preset--gradient--cool-to-warm-spectrum: linear-gradient(135deg,rgb(74,234,220) 0%,rgb(151,120,209) 20%,rgb(207,42,186) 40%,rgb(238,44,130) 60%,rgb(251,105,98) 80%,rgb(254,248,76) 100%);--wp--preset--gradient--blush-light-purple: linear-gradient(135deg,rgb(255,206,236) 0%,rgb(152,150,240) 100%);--wp--preset--gradient--blush-bordeaux: linear-gradient(135deg,rgb(254,205,165) 0%,rgb(254,45,45) 50%,rgb(107,0,62) 100%);--wp--preset--gradient--luminous-dusk: linear-gradient(135deg,rgb(255,203,112) 0%,rgb(199,81,192) 50%,rgb(65,88,208) 100%);--wp--preset--gradient--pale-ocean: linear-gradient(135deg,rgb(255,245,203) 0%,rgb(182,227,212) 50%,rgb(51,167,181) 100%);--wp--preset--gradient--electric-grass: linear-gradient(135deg,rgb(202,248,128) 0%,rgb(113,206,126) 100%);--wp--preset--gradient--midnight: linear-gradient(135deg,rgb(2,3,129) 0%,rgb(40,116,252) 100%);--wp--preset--duotone--dark-grayscale: url('#wp-duotone-dark-grayscale');--wp--preset--duotone--grayscale: url('#wp-duotone-grayscale');--wp--preset--duotone--purple-yellow: url('#wp-duotone-purple-yellow');--wp--preset--duotone--blue-red: url('#wp-duotone-blue-red');--wp--preset--duotone--midnight: url('#wp-duotone-midnight');--wp--preset--duotone--magenta-yellow: url('#wp-duotone-magenta-yellow');--wp--preset--duotone--purple-green: url('#wp-duotone-purple-green');--wp--preset--duotone--blue-orange: url('#wp-duotone-blue-orange');--wp--preset--font-size--small: 13px;--wp--preset--font-size--medium: 20px;--wp--preset--font-size--large: 36px;--wp--preset--font-size--x-large: 42px;--wp--preset--spacing--20: 0.44rem;--wp--preset--spacing--30: 0.67rem;--wp--preset--spacing--40: 1rem;--wp--preset--spacing--50: 1.5rem;--wp--preset--spacing--60: 2.25rem;--wp--preset--spacing--70: 3.38rem;--wp--preset--spacing--80: 5.06rem;}:where(.is-layout-flex){gap: 0.5em;}body .is-layout-flow > .alignleft{float: left;margin-inline-start: 0;margin-inline-end: 2em;}body .is-layout-flow > .alignright{float: right;margin-inline-start: 2em;margin-inline-end: 0;}body .is-layout-flow > .aligncenter{margin-left: auto !important;margin-right: auto !important;}body .is-layout-constrained > .alignleft{float: left;margin-inline-start: 0;margin-inline-end: 2em;}body .is-layout-constrained > .alignright{float: right;margin-inline-start: 2em;margin-inline-end: 0;}body .is-layout-constrained > .aligncenter{margin-left: auto !important;margin-right: auto !important;}body .is-layout-constrained > :where(:not(.alignleft):not(.alignright):not(.alignfull)){max-width: var(--wp--style--global--content-size);margin-left: auto !important;margin-right: auto !important;}body .is-layout-constrained > .alignwide{max-width: var(--wp--style--global--wide-size);}body .is-layout-flex{display: flex;}body .is-layout-flex{flex-wrap: wrap;align-items: center;}body .is-layout-flex > *{margin: 0;}:where(.wp-block-columns.is-layout-flex){gap: 2em;}.has-black-color{color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-color{color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-color{color: var(--wp--preset--color--white) !important;}.has-pale-pink-color{color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-color{color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-color{color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-color{color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-color{color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-color{color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-color{color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-color{color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-color{color: var(--wp--preset--color--vivid-purple) !important;}.has-black-background-color{background-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-background-color{background-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-background-color{background-color: var(--wp--preset--color--white) !important;}.has-pale-pink-background-color{background-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-background-color{background-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-background-color{background-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-background-color{background-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-background-color{background-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-background-color{background-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-background-color{background-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-background-color{background-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-background-color{background-color: var(--wp--preset--color--vivid-purple) !important;}.has-black-border-color{border-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-border-color{border-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-border-color{border-color: var(--wp--preset--color--white) !important;}.has-pale-pink-border-color{border-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-border-color{border-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-border-color{border-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-border-color{border-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-border-color{border-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-border-color{border-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-border-color{border-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-border-color{border-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-border-color{border-color: var(--wp--preset--color--vivid-purple) !important;}.has-vivid-cyan-blue-to-vivid-purple-gradient-background{background: var(--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple) !important;}.has-light-green-cyan-to-vivid-green-cyan-gradient-background{background: var(--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan) !important;}.has-luminous-vivid-amber-to-luminous-vivid-orange-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange) !important;}.has-luminous-vivid-orange-to-vivid-red-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-orange-to-vivid-red) !important;}.has-very-light-gray-to-cyan-bluish-gray-gradient-background{background: var(--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray) !important;}.has-cool-to-warm-spectrum-gradient-background{background: var(--wp--preset--gradient--cool-to-warm-spectrum) !important;}.has-blush-light-purple-gradient-background{background: var(--wp--preset--gradient--blush-light-purple) !important;}.has-blush-bordeaux-gradient-background{background: var(--wp--preset--gradient--blush-bordeaux) !important;}.has-luminous-dusk-gradient-background{background: var(--wp--preset--gradient--luminous-dusk) !important;}.has-pale-ocean-gradient-background{background: var(--wp--preset--gradient--pale-ocean) !important;}.has-electric-grass-gradient-background{background: var(--wp--preset--gradient--electric-grass) !important;}.has-midnight-gradient-background{background: var(--wp--preset--gradient--midnight) !important;}.has-small-font-size{font-size: var(--wp--preset--font-size--small) !important;}.has-medium-font-size{font-size: var(--wp--preset--font-size--medium) !important;}.has-large-font-size{font-size: var(--wp--preset--font-size--large) !important;}.has-x-large-font-size{font-size: var(--wp--preset--font-size--x-large) !important;}
+.wp-block-navigation a:where(:not(.wp-element-button)){color: inherit;}
+:where(.wp-block-columns.is-layout-flex){gap: 2em;}
+.wp-block-pullquote{font-size: 1.5em;line-height: 1.6;}
+</style>
+<link rel="https://api.w.org/" href="https://fujitsu.recruiting.jp.fujitsu.com/wp-json/"><link rel="alternate" type="application/json" href="https://fujitsu.recruiting.jp.fujitsu.com/wp-json/wp/v2/pages/13217"><link rel="canonical" href="https://fujitsu.recruiting.jp.fujitsu.com/hackathon/">
+<link rel="alternate" type="application/json+oembed" href="https://fujitsu.recruiting.jp.fujitsu.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Ffujitsu.recruiting.jp.fujitsu.com%2Fhackathon%2F">
+<link rel="alternate" type="text/xml+oembed" href="https://fujitsu.recruiting.jp.fujitsu.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Ffujitsu.recruiting.jp.fujitsu.com%2Fhackathon%2F&amp;format=xml">
+<link rel="stylesheet" href="./fujitsu_files/answers.css">
+<script src="./fujitsu_files/answerstemplates.compiled.min.js.ダウンロード"></script>
+<script src="./fujitsu_files/typed.js@2.0.11"></script>
+<script src="./fujitsu_files/axios.min.js.ダウンロード"></script>
+<script src="./fujitsu_files/searchbar.js.ダウンロード"></script>
+<script src="./fujitsu_files/answers.min.js.ダウンロード" onload="ANSWERS.domReady(initAnswers)" async="" defer=""></script><link href="./fujitsu_files/common.css" rel="stylesheet">
+<style>.uw-s10-reading-guide{display:none;box-sizing:border-box;background:#000;width:40vw!important;min-width:200px!important;position:absolute!important;height:12px!important;border:solid 3px #fff300;border-radius:5px;top:20px;z-index:2147483647;transform:translateX(-50%)}.uw-s10-reading-guide__arrow{bottom:100%;left:50%;transform:translateX(-50%);width:20px;height:0;position:absolute}.uw-s10-reading-guide__arrow:after,.uw-s10-reading-guide__arrow:before{content:"";bottom:100%;left:50%;border:solid transparent;height:0;width:0;position:absolute;pointer-events:none}.uw-s10-reading-guide__arrow:after{border-bottom-color:#000;border-width:14px;margin-left:-14px}.uw-s10-reading-guide__arrow:before{border-bottom-color:#fff300;border-width:17px;margin-left:-17px}.uw-s10-left-ruler-guide,.uw-s10-right-ruler-guide{width:16px;height:9px;background:0 0;display:none;position:absolute!important;z-index:2147483647;transform:translateY(-50%)}.uw-s10-bottom-ruler-guide{width:36px;height:16px;background:0 0;display:none;position:absolute!important;z-index:2147483647;transform:translateX(-50%)}.usc{clip:rect(1px,1px,1px,1px);height:1px;width:1px;overflow:hidden;position:absolute!important;z-index:-1;opacity:0}.userway-s3-1{filter:invert(100%);-webkit-filter:invert(100%)}.userway-s3-1-white-bg{background:#fff!important}.userway-s3-1 iframe[name=userway]{filter:invert(1)!important}.userway-s3-1-ff{filter:invert(100%);-webkit-filter:invert(100%)}.userway-s3-3.userway-s6 [role=link],.userway-s3-3.userway-s6 [role=link] *,.userway-s3-3.userway-s6 a,.userway-s3-3.userway-s6 a *{color:#0000d3!important;background-color:#fff!important}.userway-s3-4-black{background-color:#888!important;color:#fff!important}.userway-s3-3.userway-s6 [role=link]:hover,.userway-s3-3.userway-s6 a:hover,.userway-s3-4-light{background-color:#fff!important;color:#000!important}.userway-s3-4{filter:grayscale(100%)!important;-webkit-filter:grayscale(100%)!important}.uiiw img,.ups img{max-width:100%!important}body .rvNotification{visibility:hidden!important}body .uwy{z-index:2147483647;position:fixed!important;transform:none!important}body .uwy .uai{text-align:initial!important;top:10px}body .uwy .uai .userway_dictionary_popup_container.hidden,body .uwy .uai.hidden,body .uwy.hidden{display:none}body .uwy.userway_p1 .uai{top:13px;right:auto;bottom:auto;left:calc(100vw - 21px);transform:translate(-100%)}body .uwy.userway_p2 .uai,body .uwy.userway_p3 .uai{top:50%;transform:translate(-100%,-50%);left:calc(100vw - 21px);right:auto}body .uwy.userway_p3 .uai{top:auto;bottom:13px;transform:translate(-100%)}body .uwy.userway_p4 .uai{top:auto;left:calc(50% - 22px);bottom:16px;right:auto}body .uwy.userway_p4.userway_hidden{bottom:-30px;top:auto;right:auto}body .uwy.userway_p4.userway_hidden.uo{bottom:13px}body .uwy.userway_p4.userway_hidden .uai{transform:translate(-50%,100%)}body .uwy.userway_p5 .uai{top:auto;bottom:13px;left:13px;right:auto}body .uwy.userway_p6 .uai{top:50%;transform:translateY(-50%);left:13px;right:auto;bottom:auto}body .uwy.userway_p7 .uai,body .uwy.userway_p8 .uai{top:13px;left:13px;right:auto;bottom:auto}body .uwy.userway_p8 .uai{left:50%;transform:translate(-50%)}body .uwy.userway_p8.userway_hidden .uai{transform:translate(-50%,-100%)}body .uwy.userway_p8.userway_hidden.uo{top:10px}body .uwy.userway_p4 .uai,body .uwy.userway_p8 .uai{left:50vw;transform:translateX(-50%)}body .uwy.uon .uai{background:#007dd5!important}body .uwy .uai img,body .uwy.uon .uwif{display:block!important}body .uwy .userway_ft_iframe_wrapper,body .uwy.uon.umb .uai,body .uwy.uon.usb .uai{display:none}body .uwy .uai .ups.white .si_w,body .uwy.userway_ft_on .uit{display:block}body .uwy.uen .uai .check_on{opacity:1;visibility:visible;top:-4px;right:-4px}body .uwy .uit,body .uwy .uwif{position:fixed;top:0;left:0;bottom:0;right:0;width:100%!important;max-width:100%!important;height:100%!important;visibility:visible!important;opacity:0!important;background:0 0!important;border:none;margin:0;padding:0;overflow:hidden;z-index:inherit;display:none}body .uwy .uai{position:fixed!important;cursor:pointer;background:#003d68!important;border-radius:50%!important;padding:3px;display:inline-block;width:40px;height:40px;min-width:40px;min-height:40px;max-width:40px;max-height:40px;box-sizing:content-box!important}body .uwy .uai:active,body .uwy .uai:focus,body .uwy .uai:hover{background:#007dd5}body .uwy .uai .ups,body .uwy .uai .usr{position:absolute;background-color:transparent!important}body .uwy .uai .ups{height:45px;width:45px;overflow:hidden;background-position:-48px -48px;background-size:140px;animation:standard .75s infinite linear;transform-origin:50% 50% 0!important;display:none;top:0;left:0}body .uwy .uai .ups .si_w{display:block}body .uwy .uai .ups .si_b,body .uwy .uai .ups.white .si_b{display:none}body .uwy .uai .ups .si_b,body .uwy .uai .ups .si_w{height:45px;width:45px;position:absolute;top:0;left:0}body .uwy .uai .usr{z-index:-1!important;top:-10px;right:-10px;bottom:-10px;left:-10px;display:inline-block}body .uwy .uai.uli .ui_w,body .uwy .uai.uli .ups .si_w{display:none}body .uwy .uai .ui_w,body .uwy .uai.uli .ui_b,body .uwy .uai.uli .ups .si_b,body .uwy .uai.userway_dark .ups .si_w{display:block}body .uwy .uai.loading .ups{display:block!important}body .uwy .uai .ui_b,body .uwy .uai.loading .ui_b,body .uwy .uai.loading .ui_w,body .uwy .uai.userway_dark .ups .si_b{display:none}.uwy .uai img:not(.check_on),body .uwy .uai img:not(.check_on){height:40px;width:40px;display:block;padding:0!important;margin:0!important;background:0 0!important;border:none!important;opacity:1!important;visibility:visible!important}body .uwy .uai .check_on{position:absolute;top:-7px;right:-4px;width:18px;height:20px;transition:.1s;opacity:0;visibility:hidden;background:0 0!important;border:none!important;padding:0!important;margin:0!important}body .uwy.utb .uai{padding:4px;width:57px;height:57px;min-width:57px;min-height:57px;max-width:57px;max-height:57px}body .uwy.utb .uai .ups{height:57px;width:57px;top:4px;left:4px}.uwy.utb .uai img:not(.check_on),body .uwy.utb .uai img:not(.check_on){width:57px;height:57px;padding:0!important;margin:0!important;background:0 0!important;border:none!important;opacity:1!important;visibility:visible!important}body .uwy.utb .uai .check_on{top:-2px;right:-2px;width:21px;height:21px}body .uwy.utb.userway_p1,body .uwy.utb.userway_p2,body .uwy.utb.userway_p3{right:30px}body .uwy.utb.userway_p3,body .uwy.utb.userway_p4,body .uwy.utb.userway_p5{bottom:30px}body .uwy.utb.userway_p4.userway_hidden{top:auto}body .uwy.utb.userway_p4.userway_hidden.uo{bottom:30px;margin:0!important}.uwy.uac.userway_p4.userway_hidden.uo .uai,.uwy.uac.userway_p8.userway_hidden.uo .uai,.uwy.utb.userway_p4.userway_hidden.uo .uai,.uwy.utb.userway_p8.userway_hidden.uo .uai,body .uwy.uac.userway_p4.userway_hidden.uo .uai,body .uwy.uac.userway_p8.userway_hidden.uo .uai,body .uwy.utb.userway_p4.userway_hidden.uo .uai,body .uwy.utb.userway_p8.userway_hidden.uo .uai{transform:translate(-50%,0%)}body .uwy.utb.userway_p4.userway_hidden .uai{transform:translate(-50%,100%)}body .uwy.utb.userway_p8.userway_hidden{top:13px}body .uwy.utb.userway_p8.userway_hidden.uo{top:13px;margin:0}body .uwy.utb.userway_p8.userway_hidden .uai{transform:translate(-50%,-100%)}body .uwy.utb.userway_p6,body .uwy.utb.userway_p7{left:11px}body .uwy.utb .ups{top:10px;left:11px}body .uwy.uac{border-radius:0!important}body .uwy.uac .uai{border-radius:5px!important;width:auto;height:auto;max-height:initial;max-width:initial;min-height:initial;min-width:initial}body .uwy.uac.userway_p1,body .uwy.uac.userway_p2,body .uwy.uac.userway_p3{right:50px}body .uwy.uac.userway_p1.userway_hidden .uai,body .uwy.uac.userway_p2.userway_hidden .uai,body .uwy.uac.userway_p3.userway_hidden .uai{transform:translateX(95%)}body .uwy.uac.userway_p5,body .uwy.uac.userway_p6,body .uwy.uac.userway_p7{left:50px}body .uwy.uac.userway_p5.userway_hidden .uai,body .uwy.uac.userway_p6.userway_hidden .uai,body .uwy.uac.userway_p7.userway_hidden .uai{transform:translateX(-95%)}body .uwy.uac.userway_p1 .uai,body .uwy.uac.userway_p7 .uai,body .uwy.uac.userway_p8 .uai{top:35px}body .uwy.uac.userway_p3 .uai,body .uwy.uac.userway_p4 .uai,body .uwy.uac.userway_p5 .uai{bottom:35px}body .uwy.uac.userway_p4 .uai,body .uwy.uac.userway_p8 .uai{left:50vw;transform:translateX(-50%);margin:0 auto;right:auto}body .uwy.uac.userway_p8.userway_hidden .uai{transform:translate(-50%,-130%)}body .uwy.uac.userway_p4.userway_hidden .uai{transform:translate(-50%,130%)}body .uwy.uac .loading{overflow:hidden}body .uwy.uac .loading:after{content:"";width:50%;height:4px;position:absolute;top:0;left:0;background-color:#fff;transform:translateX(-220%);animation:.9s linear infinite block_loading}body .uwy.uac .loading .ups{display:none!important}body .uwy.uac .loading.uli:after{background-color:#000}body .uwy.uac .uhi{top:44px}body .uwy.userway_p1.userway_hidden .uai,body .uwy.userway_p2.userway_hidden .uai,body .uwy.userway_p3.userway_hidden .uai{transform:translate(100%,-50%)}body .uwy.userway_p5.userway_hidden .uai,body .uwy.userway_p6.userway_hidden .uai,body .uwy.userway_p7.userway_hidden .uai{transform:translate(-100%,-50%)}body .uwy.uac.utb.userway_hidden.userway_p4{bottom:35px}body .uwy .uai{font-size:initial!important;transition:transform .4s!important}body .uwy:not(.uh) .uai:hover{transform:scale(1.1)!important}body .uwy:not(.uh).userway_p1 .uai:hover,body .uwy:not(.uh).userway_p3 .uai:hover{transform:translate(-100%) scale(1.1)!important}body .uwy:not(.uh).userway_p2 .uai:hover{transform:translate(-100%,-50%) scale(1.1)!important}body .uwy:not(.uh).userway_p4 .uai:hover,body .uwy:not(.uh).userway_p8 .uai:hover{transform:translateX(-50%) scale(1.1)!important}body .uwy:not(.uh).userway_p6 .uai:hover{transform:translateY(-50%) scale(1.1)!important}body .uwy .fflag{border-radius:50%;width:19px;height:19px;border:1px solid #fff;position:absolute;left:-2px;top:-2px}body .uwy.uen img .check_on{opacity:1!important;visibility:visible!important}@media only screen and (max-device-width:1024px){body .uwy .uit,body .uwy .uwif{display:none!important;opacity:1!important;visibility:visible!important}body .uwy.uon,body .uwy.uon .uit,body .uwy.uon .uwif{display:block!important}body .uwy .ufiw{display:none!important;opacity:1!important;visibility:visible!important}}.uwaw-dictionary-tooltip{transform:translate(-100%,-6px);margin-left:38px;width:300px;cursor:default;opacity:0;visibility:hidden;position:absolute;transition:transform .15s ease,opacity .15s ease,visibility .15s ease}.uwaw-dictionary-tooltip_active{opacity:1;visibility:visible;transform:translate(-100%,0)}.utb .uwaw-dictionary-tooltip{margin-left:50px}.uwaw-dictionary-tooltip__i{padding-top:20px}.uwaw-dictionary-tooltip__ii{background:#0a0910;border-radius:14px 0 14px 14px;position:relative;padding:16px 19px}.uwaw-dictionary-tooltip__ico{width:34px;height:34px;border-radius:50%;background:rgba(255,255,255,.16);margin-right:9px;-ms-flex-pack:center;justify-content:center}.uwaw-dictionary-tooltip__ico .no-fill{fill:none!important}.uwaw-dictionary-tooltip__close,.uwaw-dictionary-tooltip__ico,.uwaw-dictionary-tooltip__title{display:-ms-flexbox;display:flex;-ms-flex-align:center;align-items:center}.uwaw-dictionary-tooltip__title{color:#fff;font-size:14px;line-height:20px;letter-spacing:-.11px;font-weight:600;font-family:Metropolis,sans-serif;padding-bottom:9px}.uwaw-dictionary-tooltip__close{position:absolute;right:17px;top:22px;width:28px;height:28px;border-radius:50%;background:#fff;border:none;-ms-flex-pack:center;justify-content:center;transition:opacity .3s ease;cursor:pointer;padding:0}.uwaw-dictionary-tooltip__close:hover{opacity:.7}.uwaw-dictionary-tooltip__description{font-family:Metropolis,sans-serif;color:#afabc2;font-size:14px;line-height:20px;padding-right:20px}.uwaw-dictionary-tooltip__description strong{color:#fff}.uwaw-dictionary-tooltip__tail{position:absolute;right:0;top:-15px}.uwaw-dictionary-tooltip__tail path{fill:#0a0910}.userway_p3 .uwaw-dictionary-tooltip,.userway_p4 .uwaw-dictionary-tooltip,.userway_p5 .uwaw-dictionary-tooltip{bottom:100%}.userway_p3 .uwaw-dictionary-tooltip .uwaw-dictionary-tooltip__i,.userway_p4 .uwaw-dictionary-tooltip .uwaw-dictionary-tooltip__i,.userway_p5 .uwaw-dictionary-tooltip .uwaw-dictionary-tooltip__i{padding-bottom:16px}.userway_p3 .uwaw-dictionary-tooltip .uwaw-dictionary-tooltip__ii,.userway_p4 .uwaw-dictionary-tooltip .uwaw-dictionary-tooltip__ii{border-radius:14px 14px 0 14px}.userway_p3 .uwaw-dictionary-tooltip__tail,.userway_p4 .uwaw-dictionary-tooltip__tail,.userway_p5 .uwaw-dictionary-tooltip__tail{transform:rotate(180deg) scaleX(-1);top:auto;bottom:-13px}.userway_p5 .uwaw-dictionary-tooltip,.userway_p6 .uwaw-dictionary-tooltip,.userway_p7 .uwaw-dictionary-tooltip{margin-left:9px;left:0;transform:translateX(0)}.userway_p5 .uwaw-dictionary-tooltip .uwaw-dictionary-tooltip__ii{border-radius:14px 14px 14px 0}.userway_p5 .uwaw-dictionary-tooltip .uwaw-dictionary-tooltip__tail{transform:scaleX(1) rotate(180deg);left:0}.userway_p6 .uwaw-dictionary-tooltip .uwaw-dictionary-tooltip__ii,.userway_p7 .uwaw-dictionary-tooltip .uwaw-dictionary-tooltip__ii{border-radius:0 14px 14px 14px}.userway_p6 .uwaw-dictionary-tooltip .uwaw-dictionary-tooltip__tail,.userway_p7 .uwaw-dictionary-tooltip .uwaw-dictionary-tooltip__tail{transform:scaleX(-1);right:auto;left:0}.uwy{z-index:2147483647;position:fixed!important;transform:none!important}.uwy .uai{text-align:initial!important;top:10px}.uwy .uai .userway_dictionary_popup_container.hidden,.uwy .uai.hidden,.uwy.hidden{display:none}.uwy.userway_p1 .uai{top:13px;right:auto;bottom:auto;left:calc(100vw - 21px);transform:translate(-100%)}.uwy.userway_p2 .uai,.uwy.userway_p3 .uai{top:50%;transform:translate(-100%,-50%);left:calc(100vw - 21px);right:auto}.uwy.userway_p3 .uai{top:auto;bottom:13px;transform:translate(-100%)}.uwy.userway_p4 .uai{top:auto;left:calc(50% - 22px);bottom:16px;right:auto}.uwy.userway_p4.userway_hidden{bottom:-30px;top:auto;right:auto}.uwy.userway_p4.userway_hidden.uo{bottom:13px}.uwy.userway_p4.userway_hidden .uai{transform:translate(-50%,100%)}.uwy.userway_p5 .uai{top:auto;bottom:13px;left:13px;right:auto}.uwy.userway_p6 .uai{top:50%;transform:translateY(-50%);left:13px;right:auto;bottom:auto}.uwy.userway_p7 .uai,.uwy.userway_p8 .uai{top:13px;left:13px;right:auto;bottom:auto}.uwy.userway_p8 .uai{left:50%;transform:translate(-50%)}.uwy.userway_p8.userway_hidden .uai{transform:translate(-50%,-100%)}.uwy.userway_p8.userway_hidden.uo{top:10px}.uwy.userway_p4 .uai,.uwy.userway_p8 .uai{left:50vw;transform:translateX(-50%)}.uwy.uon .uai{background:#007dd5!important}.uwy .uai img,.uwy.uon .uwif{display:block!important}.uwy .userway_ft_iframe_wrapper,.uwy.uon.umb .uai,.uwy.uon.usb .uai{display:none}.uwy .uai .ups.white .si_w,.uwy.userway_ft_on .uit{display:block}.uwy.uen .uai .check_on{opacity:1;visibility:visible;top:-4px;right:-4px}.uwy .uit,.uwy .uwif{position:fixed;top:0;left:0;bottom:0;right:0;width:100%!important;max-width:100%!important;height:100%!important;visibility:visible!important;opacity:0!important;background:0 0!important;border:none;margin:0;padding:0;overflow:hidden;z-index:inherit;display:none}.uwy .uai{position:fixed!important;cursor:pointer;background:#003d68!important;border-radius:50%!important;padding:3px;display:inline-block;width:40px;height:40px;min-width:40px;min-height:40px;max-width:40px;max-height:40px;box-sizing:content-box!important}.uwy .uai:active,.uwy .uai:focus,.uwy .uai:hover{background:#007dd5}.uwy .uai .ups,.uwy .uai .usr{position:absolute;background-color:transparent!important}.uwy .uai .ups{height:45px;width:45px;overflow:hidden;background-position:-48px -48px;background-size:140px;animation:standard .75s infinite linear;transform-origin:50% 50% 0!important;display:none;top:0;left:0}.uwy .uai .ups .si_w{display:block}.uwy .uai .ups .si_b,.uwy .uai .ups.white .si_b{display:none}.uwy .uai .ups .si_b,.uwy .uai .ups .si_w,.uwy.uac .loading:after{height:45px;width:45px;position:absolute;top:0;left:0}.uwy .uai .usr{z-index:-1!important;top:-10px;right:-10px;bottom:-10px;left:-10px;display:inline-block}.uwy .uai.uli .ui_w,.uwy .uai.uli .ups .si_w{display:none}.uwy .uai .ui_w,.uwy .uai.uli .ui_b,.uwy .uai.uli .ups .si_b,.uwy .uai.userway_dark .ups .si_w{display:block}.uwy .uai.loading .ups{display:block!important}.uwy .uai .ui_b,.uwy .uai.loading .ui_b,.uwy .uai.loading .ui_w,.uwy .uai.userway_dark .ups .si_b{display:none}.uwy .uai .check_on{position:absolute;top:-7px;right:-4px;width:18px;height:20px;transition:.1s;opacity:0;visibility:hidden;background:0 0!important;border:none!important;padding:0!important;margin:0!important}.uwy.utb .uai{padding:4px;width:57px;height:57px;min-width:57px;min-height:57px;max-width:57px;max-height:57px}.uwy.utb .uai .ups{height:57px;width:57px;top:4px;left:4px}.uwy.utb .uai .check_on{top:-2px;right:-2px;width:21px;height:21px}.uwy.utb.userway_p1,.uwy.utb.userway_p2,.uwy.utb.userway_p3{right:30px}.uwy.utb.userway_p3,.uwy.utb.userway_p4,.uwy.utb.userway_p5{bottom:30px}.uwy.utb.userway_p4.userway_hidden{top:auto}.uwy.utb.userway_p4.userway_hidden.uo{bottom:30px;margin:0!important}.uwy.utb.userway_p4.userway_hidden .uai{transform:translate(-50%,100%)}.uwy.utb.userway_p8.userway_hidden{top:13px}.uwy.utb.userway_p8.userway_hidden.uo{top:13px;margin:0}.uwy.utb.userway_p8.userway_hidden .uai{transform:translate(-50%,-100%)}.uwy.utb.userway_p6,.uwy.utb.userway_p7{left:11px}.uwy.utb .ups{top:10px;left:11px}.uwy.uac{border-radius:0!important}.uwy.uac .uai{border-radius:5px!important;width:auto;height:auto;max-height:initial;max-width:initial;min-height:initial;min-width:initial}.uwy.uac.userway_p1,.uwy.uac.userway_p2,.uwy.uac.userway_p3{right:50px}.uwy.uac.userway_p1.userway_hidden .uai,.uwy.uac.userway_p2.userway_hidden .uai,.uwy.uac.userway_p3.userway_hidden .uai{transform:translateX(95%)}.uwy.uac.userway_p5,.uwy.uac.userway_p6,.uwy.uac.userway_p7{left:50px}.uwy.uac.userway_p5.userway_hidden .uai,.uwy.uac.userway_p6.userway_hidden .uai,.uwy.uac.userway_p7.userway_hidden .uai{transform:translateX(-95%)}.uwy.uac.userway_p1 .uai,.uwy.uac.userway_p7 .uai,.uwy.uac.userway_p8 .uai{top:35px}.uwy.uac.userway_p3 .uai,.uwy.uac.userway_p4 .uai,.uwy.uac.userway_p5 .uai{bottom:35px}.uwy.uac.userway_p4 .uai,.uwy.uac.userway_p8 .uai{left:50vw;transform:translateX(-50%);margin:0 auto;right:auto}.uwy.uac.userway_p8.userway_hidden .uai{transform:translate(-50%,-130%)}.uwy.uac.userway_p4.userway_hidden .uai{transform:translate(-50%,130%)}.uwy.uac .loading{overflow:hidden}.uwy.uac .loading:after{content:"";width:50%;height:4px;background-color:#fff;transform:translateX(-220%);animation:.9s linear infinite block_loading}.uwy.uac .loading .ups{display:none!important}.uwy.uac .loading.uli:after{background-color:#000}.uwy.uac .uhi{top:44px}.uwy.userway_p1.userway_hidden .uai,.uwy.userway_p2.userway_hidden .uai,.uwy.userway_p3.userway_hidden .uai{transform:translate(100%,-50%)}.uwy.userway_p5.userway_hidden .uai,.uwy.userway_p6.userway_hidden .uai,.uwy.userway_p7.userway_hidden .uai{transform:translate(-100%,-50%)}.uwy.uac.utb.userway_hidden.userway_p4{bottom:35px}.uwy .uai{font-size:initial!important;transition:transform .4s!important}.uwy:not(.uh) .uai:hover{transform:scale(1.1)!important}.uwy:not(.uh).userway_p1 .uai:hover,.uwy:not(.uh).userway_p3 .uai:hover{transform:translate(-100%) scale(1.1)!important}.uwy:not(.uh).userway_p2 .uai:hover{transform:translate(-100%,-50%) scale(1.1)!important}.uwy:not(.uh).userway_p4 .uai:hover,.uwy:not(.uh).userway_p8 .uai:hover{transform:translateX(-50%) scale(1.1)!important}.uwy:not(.uh).userway_p6 .uai:hover{transform:translateY(-50%) scale(1.1)!important}.uwy .fflag{border-radius:50%;width:19px;height:19px;border:1px solid #fff;position:absolute;left:-2px;top:-2px}.uwy.uen img .check_on{opacity:1!important;visibility:visible!important}@media only screen and (max-device-width:1024px){.uwy .uit,.uwy .uwif{display:none!important;opacity:1!important;visibility:visible!important}.uwy.uon,.uwy.uon .uit,.uwy.uon .uwif{display:block!important}.uwy .ufiw{display:none!important;opacity:1!important;visibility:visible!important}}.uw-sl{transition:background .1s ease;background:0 0;z-index:2147483638;position:fixed}.uw-sl:focus-within{width:100%;background:rgba(0,0,0,.25);z-index:2147483638;position:fixed;left:0;right:0;top:0;bottom:0}.uw-sl__item{box-sizing:border-box;left:38px;top:-70px;position:fixed!important;display:-ms-flexbox!important;display:flex!important;-ms-flex-align:center!important;align-items:center!important;-ms-flex-pack:justify!important;justify-content:space-between!important;background:#fff!important;border-radius:8px!important;border:2px solid #0038ff!important;max-width:315px;padding:0 15px 0 0!important;text-align:left!important;width:100%!important;height:63px!important;box-shadow:0 0 0 4px rgba(0,56,255,.22)!important;opacity:0;transition:top .2s,opacity .2s}.uw-sl__item:focus{top:40px;opacity:1;outline:1px solid rgba(255,255,255,0);background:#fff!important}.uw-sl__item:hover{background:#fff!important;background:#fff}.uw-sl__item__img{width:57px;display:-ms-flexbox;display:flex;-ms-flex-align:center;align-items:center;-ms-flex-pack:center;justify-content:center}.uw-sl__item__img svg{width:auto!important;height:auto!important}.uw-sl .uw-sl__e-icon path,.uw-sl__item__img path{fill:#000!important}.uw-sl .uw-sl__e-icon .no-fill,.uw-sl__item__img .no-fill{fill:none!important}.uw-sl .uw-sl__e-icon,.uw-sl__item__left,.uw-sl__item__title{display:-ms-flexbox!important;display:flex!important;-ms-flex-align:center!important;align-items:center!important}.uw-sl__item__title{font-size:14px;line-height:16px;font-weight:500!important;letter-spacing:-.06px;width:calc(100% - 53px);font-family:"Metropolis",Aria,Helvetica,sans-serif!important;color:#000;-ms-flex-pack:justify!important;justify-content:space-between!important}.uw-sl .uw-sl__e-icon,.uw-sl__item__left{-ms-flex-pack:start!important;justify-content:flex-start!important}.uw-sl .uw-sl__e-icon{-ms-flex-pack:center!important;justify-content:center!important;width:26px;height:27px}.accessibility-btn{border:2px solid #fff;padding:10px 22px;box-sizing:border-box;text-align:center}.accessibility-btn__text{display:block;font-size:15px;line-height:normal!important;color:#fff;font-weight:500;letter-spacing:.2px}.big-uw-icon .accessibility-btn__text,.utb .accessibility-btn__text{font-size:16px;letter-spacing:.4px;line-height:normal!important}.light .accessibility-btn__text,.uli .accessibility-btn__text{color:#000}.light .accessibility-btn,.uli .accessibility-btn{border-color:#000}</style></head>
+<body><div class="uw-sl" role="region" aria-label="Quick accessibility menu"><button class="uw-sl__item" data-uw-rm-ignore="true" aria-label="メインコンテンツにスキップ" lang="ja" id="uw-skip-to-main"><span class="uw-sl__item__left"><span class="uw-sl__item__img"><svg focusable="false" width="26" height="24" xmlns="http://www.w3.org/2000/svg"><g stroke="#000" stroke-width="1.5" fill="none" fill-rule="evenodd"><rect class="no-fill" fill="none" x=".75" y=".75" width="24.5" height="22.5" rx="3"></rect><path class="no-fill" fill="none" d="M1 7h24M9.5 7v17"></path></g></svg></span><span data-uw-ignore-s17="" class="uw-sl__item__title" data-uw-rm-ignore="">メインコンテンツにスキップ</span></span><span class="uw-sl__e-icon"><svg width="26" height="27" xmlns="http://www.w3.org/2000/svg"><g class="no-fill" fill="none" fill-rule="evenodd"><path d="M4.498 24.3v-.872H1.5v-1.37h2.716v-.872H1.5v-1.27h3v-.872H.542V24.3h3.955zm1.909 0v-3.695L9.183 24.3h.95v-5.256h-.95v3.695l-2.776-3.695H5.45V24.3h.957zm7.21 0v-4.383h1.682v-.873h-4.314v.873h1.683V24.3h.948zm6.421 0v-.872H17.04v-1.37h2.716v-.872H17.04v-1.27h3v-.872h-3.956V24.3h3.955zm1.84 0v-1.767h1.017l1.24 1.767h1.086l-1.316-1.867c.757-.237 1.27-.849 1.27-1.644 0-1.025-.842-1.745-1.966-1.745H20.92V24.3h.957zm1.224-2.647h-1.224v-1.729h1.224c.65 0 1.101.33 1.101.865 0 .535-.451.864-1.101.864z" fill="#000" fill-rule="nonzero"></path><path class="no-fill" fill="none" d="M18.9 1v6.3a2.7 2.7 0 01-2.7 2.7H5.4h0" stroke="#000" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path><path fill="none" stroke="#000" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" d="M8.1 12.7L5.4 10l2.7-2.7"></path></g></svg></span></button><button class="uw-sl__item" data-uw-rm-ignore="true" aria-label="視覚障害者のアクセシビリティを有効にする" lang="ja" id="uw-enable-visibility"><span class="uw-sl__item__left"><span class="uw-sl__item__img"><svg focusable="false" width="28" height="26" xmlns="http://www.w3.org/2000/svg"><g class="no-fill" fill="none" fill-rule="evenodd"><path d="M13.808 6.019C8.625 6.019 4.01 9.197 1 14.148c3.01 4.951 7.625 8.129 12.808 8.129s9.797-3.178 12.807-8.129c-3.01-4.951-7.624-8.13-12.807-8.13" stroke="#000" class="no-fill" stroke-width="1.5" fill="none"></path><path d="M13.813 11.124c1.704 0 3.086 1.368 3.086 3.055 0 1.688-1.382 3.055-3.086 3.055s-3.086-1.367-3.086-3.055c0-1.687 1.382-3.055 3.086-3.055m0-3.055c-3.408 0-6.172 2.735-6.172 6.11 0 3.375 2.764 6.11 6.172 6.11s6.172-2.735 6.172-6.11c0-3.375-2.764-6.11-6.172-6.11" class="fill-white" fill="#FFF" fill-rule="nonzero"></path><path d="M17.913 14.18c0 2.244-1.839 4.064-4.105 4.064-2.268 0-4.106-1.82-4.106-4.065s1.838-4.064 4.106-4.064c2.266 0 4.105 1.82 4.105 4.064" stroke="#000" stroke-width="1.5" class="no-fill" fill="none"></path><path class="no-fill" stroke="#FFF" stroke-width="3" stroke-linecap="round" d="M2.872 22.306L22.03 3.339" fill="none"></path><path stroke="#000" stroke-width="1.5" stroke-linecap="round" d="M4.24 23.661L23.398 4.694" class="no-fill" fill="none"></path></g></svg></span><span data-uw-ignore-s17="" class="uw-sl__item__title" data-uw-rm-ignore="">視覚障害者のアクセシビリティを有効にする</span></span><span class="uw-sl__e-icon"><svg width="26" height="27" xmlns="http://www.w3.org/2000/svg"><g class="no-fill" fill="none" fill-rule="evenodd"><path d="M4.498 24.3v-.872H1.5v-1.37h2.716v-.872H1.5v-1.27h3v-.872H.542V24.3h3.955zm1.909 0v-3.695L9.183 24.3h.95v-5.256h-.95v3.695l-2.776-3.695H5.45V24.3h.957zm7.21 0v-4.383h1.682v-.873h-4.314v.873h1.683V24.3h.948zm6.421 0v-.872H17.04v-1.37h2.716v-.872H17.04v-1.27h3v-.872h-3.956V24.3h3.955zm1.84 0v-1.767h1.017l1.24 1.767h1.086l-1.316-1.867c.757-.237 1.27-.849 1.27-1.644 0-1.025-.842-1.745-1.966-1.745H20.92V24.3h.957zm1.224-2.647h-1.224v-1.729h1.224c.65 0 1.101.33 1.101.865 0 .535-.451.864-1.101.864z" fill="#000" fill-rule="nonzero"></path><path class="no-fill" fill="none" d="M18.9 1v6.3a2.7 2.7 0 01-2.7 2.7H5.4h0" stroke="#000" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path><path fill="none" stroke="#000" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" d="M8.1 12.7L5.4 10l2.7-2.7"></path></g></svg></span></button><button class="uw-sl__item" data-uw-rm-ignore="true" aria-label="アクセシビリティメニューを開く" lang="ja" id="uw-open-accessibility"><span class="uw-sl__item__left"><span class="uw-sl__item__img"><svg focusable="false" width="23" height="28" xmlns="http://www.w3.org/2000/svg"><path d="M.018 8.639c.105-.595.65-.991 1.223-.877a53.94 53.94 0 0020.517 0c.625-.125 1.228.366 1.242 1.06.01.544-.402 1.003-.915 1.102-2.289.44-4.589.727-6.893.877-.948.063-1.647.948-1.54 1.932l.202 1.84c.314 2.87.958 5.69 1.919 8.399l1.26 3.553c.202.568-.076 1.197-.62 1.407a.994.994 0 01-.364.068c-.4 0-.768-.245-.944-.638l-.007.007-.325-.724a110.53 110.53 0 01-2.83-6.926.462.462 0 00-.878 0 105.146 105.146 0 01-2.832 6.917l-.308.68.005-.021a1.05 1.05 0 01-.98.705.994.994 0 01-.364-.068c-.544-.21-.821-.839-.62-1.407l1.26-3.553a37.235 37.235 0 001.92-8.403l.2-1.824c.107-.986-.59-1.881-1.54-1.943A55.94 55.94 0 01.86 9.914c-.57-.11-.947-.68-.841-1.275zM11.5 0c1.934 0 3.502 1.634 3.502 3.651 0 2.016-1.568 3.65-3.502 3.65-1.934 0-3.502-1.634-3.502-3.65C7.998 1.634 9.566 0 11.5 0z" fill="#000" fill-rule="evenodd"></path></svg></span><span data-uw-ignore-s17="" class="uw-sl__item__title" data-uw-rm-ignore="">アクセシビリティメニューを開く</span></span><span class="uw-sl__e-icon"><svg width="26" height="27" xmlns="http://www.w3.org/2000/svg"><g class="no-fill" fill="none" fill-rule="evenodd"><path d="M4.498 24.3v-.872H1.5v-1.37h2.716v-.872H1.5v-1.27h3v-.872H.542V24.3h3.955zm1.909 0v-3.695L9.183 24.3h.95v-5.256h-.95v3.695l-2.776-3.695H5.45V24.3h.957zm7.21 0v-4.383h1.682v-.873h-4.314v.873h1.683V24.3h.948zm6.421 0v-.872H17.04v-1.37h2.716v-.872H17.04v-1.27h3v-.872h-3.956V24.3h3.955zm1.84 0v-1.767h1.017l1.24 1.767h1.086l-1.316-1.867c.757-.237 1.27-.849 1.27-1.644 0-1.025-.842-1.745-1.966-1.745H20.92V24.3h.957zm1.224-2.647h-1.224v-1.729h1.224c.65 0 1.101.33 1.101.865 0 .535-.451.864-1.101.864z" fill="#000" fill-rule="nonzero"></path><path class="no-fill" fill="none" d="M18.9 1v6.3a2.7 2.7 0 01-2.7 2.7H5.4h0" stroke="#000" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path><path fill="none" stroke="#000" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" d="M8.1 12.7L5.4 10l2.7-2.7"></path></g></svg></span></button></div>
+<!-- Google Tag Manager (noscript) -->
+<div class="uwy userway_p3" data-uw-feature-ignore="true" style="background-color: transparent !important; overflow: initial !important;" title="アクセシビリティメニュー"><div class="uai userway_dark" id="userwayAccessibilityIcon" aria-label="アクセシビリティメニュー" role="button" tabindex="0" style="background: rgb(0, 61, 104) !important;"><span class="uiiw"><img width="43" height="43" data-uw-rm-ignore="" class="ui_w" aria-hidden="true" alt="Accessibility Widget" src="./fujitsu_files/body_wh.svg"></span><div class="ups"><img width="43" height="43" data-uw-rm-ignore="" class="si_w" aria-hidden="true" alt="Spinner: White decorative" src="./fujitsu_files/spin_wh.svg"></div><span class="usr"></span><div class="uwaw-dictionary-tooltip"></div></div><iframe class="uwif userway_p3" data-uw-ignore-translate="true" name="userway" title="UserWay アクセシビリティメニュー" style="width: 100vw !important; max-width: 100vw !important; visibility: visible !important; opacity: 1 !important; color-scheme: light !important;" src="./fujitsu_files/saved_resource.html"></iframe></div><div class="uw-s10-bottom-ruler-guide"></div><div class="uw-s10-right-ruler-guide"></div><div class="uw-s10-left-ruler-guide"></div><div class="uw-s10-reading-guide"><div class="uw-s10-reading-guide__arrow"></div></div><div class="uw-s12-tooltip" aria-hidden="true"></div><noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-MLMKC2K"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+<div class="l-wrapper">
+<header class="l-header">
+    <noscript class="l-no-script">JavaScriptがオフの場合、一部のコンテンツが表示できないことがありますのでオンにしてご利用ください。</noscript>
+    <a href="https://fujitsu.recruiting.jp.fujitsu.com/hackathon/#main" class="l-skiplink"><span>このページの本文へ移動</span></a>
+    <div class="l-header_container">
+        <div class="l-header_site"><a href="https://fujitsu.recruiting.jp.fujitsu.com/">Fujitsu recruit</a></div>
+        <button id="header-search" class="l-header_toggler l-header_toggler--search" aria-controls="header-search-item-sp" aria-expanded="false">
+            <span class="l-header_toggler_inner"><span class="l-header_toggler_label" data-open-text="検索">検索</span></span>
+        </button>
+        <button id="header-menu" class="l-header_toggler l-header_toggler--menu" aria-controls="header-menu-item" aria-expanded="false">
+            <span class="l-header_toggler_inner"><span class="l-header_toggler_label" data-open-text="メニュー">メニュー</span></span>
+        </button>
+        <div id="header-menu-item" class="l-header_nav" aria-labelledby="header-menu" role="navigation" aria-label="コンテンツメニュー" aria-hidden="false">
+            <ul class="l-header_category c-category-list">
+                <li><a href="https://fujitsu.recruiting.jp.fujitsu.com/recruit/" class="c-category c-category--graduate">新卒採用</a></li>
+                <li><a href="https://fujitsu.recruiting.jp.fujitsu.com/career/" class="c-category c-category--career">キャリア採用</a></li>
+                <li><a href="https://fujitsu.recruiting.jp.fujitsu.com/barrierfree/" class="c-category c-category--barrierfree">障がい者採用</a></li>
+                <li><a href="https://fujitsu.recruiting.jp.fujitsu.com/groupcareer/" class="c-category c-category--groupcareer">グループ採用</a></li>
+            </ul>
+            <div id="header-search-item" class="l-header_search">
+                <div class="search_form-pc component yxt-Answers-component yxt-SearchBar-wrapper"><div class="yxt-SearchBar">
+  <div class="yxt-SearchBar-container">
+      <form class="yxt-SearchBar-form">
+        <label class="sr-only" for="yxt-SearchBar-input--search-bar-pc" id="yxt-SearchBar-inputLabel--search-bar-pc">
+          Conduct a search
+        </label>
+        <input class="js-yext-query yxt-SearchBar-input" id="yxt-SearchBar-input--search-bar-pc" type="text" name="query" value="" placeholder="&quot;一人ひとりの成長&quot;のための変" aria-label="Conduct a search" aria-autocomplete="list" aria-controls="yxt-SearchBar-autocomplete--search-bar-pc" aria-describedby="instructions" aria-haspopup="listbox" autocomplete="off" autocorrect="off" spellcheck="false" aria-expanded="false">
+        <div id="instructions" class="yxt-SearchBar-instructions sr-only">
+          When autocomplete results are available, use up and down arrows to review and enter to select.
+        </div>
+        <button type="button" class="js-yxt-SearchBar-clear yxt-SearchBar-clear yxt-SearchBar--hidden" data-eventtype="SEARCH_CLEAR_BUTTON" data-eventoptions="{}" data-is-analytics-attached="true">
+          <div class="Icon Icon--close " aria-hidden="true">
+            <svg viewBox="0 1 24 24" xmlns="http://www.w3.org/2000/svg">
+              <path d="M7 8l9.716 9.716m0-9.716L7 17.716" stroke="currentColor" stroke-width="2"></path>
+            </svg>
+          </div>          <span class="yxt-SearchBar-clearButtonText sr-only">
+            Clear
+          </span>
+        </button>
+          <button type="button" class="js-yxt-SearchBar-voiceSearch yxt-SearchBar-voiceSearch">
+            <div class="yxt-SearchBar-voiceIconWrapper Icon--lg yxt-SearchBar-CustomMicIcon--active">
+              <div class="yxt-SearchBar-micIconWrapper yxt-SearchBar-CustomMicIcon">
+                  <div class="Icon Icon--custom " aria-hidden="true">
+                      <img src="./fujitsu_files/voice.png" alt="" class="Icon-image">
+                  </div>  </div>
+              <div class="yxt-SearchBar-listeningIconWrapper ">
+                  <div class="Icon Icon--voice_search_dots " aria-hidden="true">
+                    <svg viewBox="0 0 33 27" xmlns="http://www.w3.org/2000/svg"><svg x="0.25" y="4.25" width="0.01" height="0.01" style="overflow:visible" opacity="1" label="anchorPointContainer">
+                      <g label="flipped" transform="scale(1 1)">
+                          <g label="layerRotation" transform="rotate(0)">
+                              <svg x="-0" y="-0" width="32" height="19" style="overflow:visible" opacity="0" label="DotsContainer">
+                              <animate class="js-yxt-SearchBar-dotsFadeIn" begin="indefinite" attributeName="x" calcMode="spline" dur="0.3s" fill="freeze" keySplines="0 0 1 1;0.42 0 0.58 1" keyTimes="0;0.5;1" values="13.5;13.5;0"></animate>
+                              <animate class="js-yxt-SearchBar-dotsFadeIn" begin="indefinite" attributeName="width" calcMode="spline" dur="0.3s" fill="freeze" keySplines="0 0 1 1;0.42 0 0.58 1" keyTimes="0;0.5;1" values="5;5;32"></animate>
+                              <animate class="js-yxt-SearchBar-dotsFadeIn" id="dotsFadeIn" begin="indefinite" attributeName="opacity" calcMode="spline" dur="0.3s" fill="freeze" keySplines="0 0 1 1;0.42 0 0.58 1;0.42 0 0.58 1" keyTimes="0;0.5;0.75;1" values="0;0;1;1"></animate>
+                              <animate class="js-yxt-SearchBar-dotsFadeOut" begin="indefinite" attributeName="x" calcMode="spline" dur="0.3s" fill="freeze" keySplines="0.42 0 0.58 1;0 0 1 1" keyTimes="0;0.5;1" values="0;13.5;13.5"></animate>
+                              <animate class="js-yxt-SearchBar-dotsFadeOut" begin="indefinite" attributeName="width" calcMode="spline" dur="0.3s" fill="freeze" keySplines="0.42 0 0.58 1;0 0 1 1" keyTimes="0;0.5;1" values="32;5;5"></animate>
+                              <animate class="js-yxt-SearchBar-dotsFadeOut" id="dotsFadeOut" begin="indefinite" attributeName="opacity" calcMode="spline" dur="0.3s" fill="freeze" keySplines="0.42 0 0.58 1;0.42 0 0.58 1;0 0 1 1" keyTimes="0;0.5;0.75;1" values="1;1;0;0"></animate>
+                                  <g clip-path="" label="maskPath">
+                                      <g label="layerShadow" filter="">
+                                      <!-- Layer: dot4 -->
+                                      <svg x="27" y="7" width="0.01" height="0.01" style="overflow:visible" opacity="1" label="anchorPointContainer">
+                                          <animate class="js-yxt-SearchBar-dotsListening" begin="indefinite" attributeName="y" calcMode="spline" dur="0.3s" fill="freeze" keySplines="0 0 1 1;0.42 0 0.58 1;0.42 0 0.58 1;0.42 0 0.58 1" keyTimes="0;0.125;0.5;0.875;1" repeatCount="indefinite" values="7;7;5;7;7"></animate>
+                                          <animate class="js-yxt-SearchBar-dotsFadeIn" begin="indefinite" attributeName="x" calcMode="spline" dur="0.3s" fill="freeze" keySplines="0 0 1 1;0.42 0 0.58 1" keyTimes="0;0.5;1" values="0;0;27"></animate>
+                                          <animate class="js-yxt-SearchBar-dotsFadeOut" begin="indefinite" attributeName="x" calcMode="spline" dur="0.3s" fill="freeze" keySplines="0.42 0 0.58 1;0 0 1 1" keyTimes="0;0.5;1" values="27;0;0"></animate>
+                                          <g label="flipped" transform="scale(1 1)">
+                                              <g label="layerRotation" transform="rotate(0)">
+                                                  <svg x="-0" y="-0" width="5" height="5" style="overflow:visible" opacity="1" label="dot4Container">
+                                                      <animate class="js-yxt-SearchBar-dotsListening" begin="indefinite" attributeName="height" calcMode="spline" dur="0.3s" fill="freeze" keySplines="0 0 1 1;0.42 0 0.58 1;0.42 0 0.58 1;0.42 0 0.58 1" keyTimes="0;0.125;0.5;0.875;1" repeatCount="indefinite" values="5;5;9;5;5"></animate>
+                                                      <g clip-path="" label="maskPath">
+                                                          <g label="layerShadow" filter="">
+                                                          <path class="yxt-SearchBar-dot4" d="M0,2.5c-0,-1.371,1.129,-2.5,2.5,-2.5 0,0,0,0,0,0 1.371,-0,2.5,1.129,2.5,2.5 0,0,0,0,0,0 0,0,0,0,0,0 0,1.371,-1.129,2.5,-2.5,2.5 -0,0,-0,0,-0,0 0,0,0,0,0,0 -1.371,0,-2.5,-1.129,-2.5,-2.5 0,0,0,0,0,0 0,0,0,-0,0,-0zM0,2.5" fill="#87B7F7" id="dot4" stroke="#00000000" stroke-dasharray="0" stroke-dashoffset="0" stroke-miterlimit="4" stroke-width="1">
+                                                              <animate class="js-yxt-SearchBar-dotsListening" begin="indefinite" attributeName="d" calcMode="spline" dur="0.3s" fill="freeze" href="#dot4" keySplines="0 0 1 1;0.42 0 0.58 1;0.42 0 0.58 1;0.42 0 0.58 1" keyTimes="0;0.125;0.5;0.875;1" repeatCount="indefinite" values="M0,2.5c-0,-1.371,1.129,-2.5,2.5,-2.5 0,0,0,0,0,0 1.371,-0,2.5,1.129,2.5,2.5 0,0,0,0,0,0 0,0,0,0,0,0 0,1.371,-1.129,2.5,-2.5,2.5 -0,0,-0,0,-0,0 0,0,0,0,0,0 -1.371,0,-2.5,-1.129,-2.5,-2.5 0,0,0,0,0,0 0,0,0,-0,0,-0zM0,2.5;M0,2.5c-0,-1.371,1.129,-2.5,2.5,-2.5 0,0,0,0,0,0 1.371,-0,2.5,1.129,2.5,2.5 0,0,0,0,0,0 0,0,0,0,0,0 0,1.371,-1.129,2.5,-2.5,2.5 -0,0,-0,0,-0,0 0,0,0,0,0,0 -1.371,0,-2.5,-1.129,-2.5,-2.5 0,0,0,0,0,0 0,0,0,-0,0,-0zM0,2.5;M0,2.5c-0,-1.371,1.129,-2.5,2.5,-2.5 0,0,0,0,0,0 1.371,-0,2.5,1.129,2.5,2.5 0,0,0,0,0,0 0,0,0,4,0,4 0,1.371,-1.129,2.5,-2.5,2.5 0,0,-0,0,-0,0 0,0,0,0,0,0 -1.371,0,-2.5,-1.129,-2.5,-2.5 0,0,0,0,0,0 0,0,0,-4,0,-4zM0,2.5;M0,2.5c-0,-1.371,1.129,-2.5,2.5,-2.5 0,0,0,0,0,0 1.371,-0,2.5,1.129,2.5,2.5 0,0,0,0,0,0 0,0,0,0,0,0 0,1.371,-1.129,2.5,-2.5,2.5 -0,0,-0,0,-0,0 0,0,0,0,0,0 -1.371,0,-2.5,-1.129,-2.5,-2.5 0,0,0,0,0,0 0,0,0,-0,0,-0zM0,2.5;M0,2.5c-0,-1.371,1.129,-2.5,2.5,-2.5 0,0,0,0,0,0 1.371,-0,2.5,1.129,2.5,2.5 0,0,0,0,0,0 0,0,0,0,0,0 0,1.371,-1.129,2.5,-2.5,2.5 -0,0,-0,0,-0,0 0,0,0,0,0,0 -1.371,0,-2.5,-1.129,-2.5,-2.5 0,0,0,0,0,0 0,0,0,-0,0,-0zM0,2.5"></animate>
+                                                          </path>
+                                          
+                                                          </g>
+                                                      </g>
+                                                  </svg>
+                                              </g>
+                                          </g>
+                                      </svg>
+                                      <!-- Layer: dot3 -->
+                                      <svg x="18" y="7" width="0.01" height="0.01" style="overflow:visible" opacity="1" label="anchorPointContainer">
+                                          <animate class="js-yxt-SearchBar-dotsListening" begin="indefinite" attributeName="y" calcMode="spline" dur="0.3s" fill="freeze" keySplines="0.42 0 0.58 1;0.42 0 0.58 1;0.42 0 0.58 1" keyTimes="0;0.375;0.75;1" repeatCount="indefinite" values="7;2;7;7"></animate>
+                                          <animate class="js-yxt-SearchBar-dotsFadeIn" begin="indefinite" attributeName="x" calcMode="spline" dur="0.3s" fill="freeze" keySplines="0 0 1 1;0.42 0 0.58 1" keyTimes="0;0.5;1" values="0;0;18"></animate>
+                                          <animate class="js-yxt-SearchBar-dotsFadeOut" begin="indefinite" attributeName="x" calcMode="spline" dur="0.3s" fill="freeze" keySplines="0.42 0 0.58 1;0 0 1 1" keyTimes="0;0.5;1" values="18;0;0"></animate>
+                                          <g label="flipped" transform="scale(1 1)">
+                                              <g label="layerRotation" transform="rotate(0)">
+                                                  <svg x="-0" y="-0" width="5" height="5" style="overflow:visible" opacity="1" label="dot3Container">
+                                                      <animate class="js-yxt-SearchBar-dotsListening" begin="indefinite" attributeName="height" calcMode="spline" dur="0.3s" fill="freeze" keySplines="0.42 0 0.58 1;0.42 0 0.58 1;0.42 0 0.58 1" keyTimes="0;0.375;0.75;1" repeatCount="indefinite" values="5;15;5;5"></animate>
+                                                      <g clip-path="" label="maskPath">
+                                                          <g label="layerShadow" filter="">
+                                                          <path class="yxt-SearchBar-dot3" d="M0,2.5c-0,-1.371,1.129,-2.5,2.5,-2.5 0,0,0,0,0,0 1.371,-0,2.5,1.129,2.5,2.5 0,0,0,0,0,0 0,0,0,0,0,0 0,1.371,-1.129,2.5,-2.5,2.5 -0,0,-0,0,-0,0 0,0,0,0,0,0 -1.371,0,-2.5,-1.129,-2.5,-2.5 0,0,0,0,0,0 0,0,0,-0,0,-0zM0,2.5" fill="#87B7F7" id="dot3" stroke="#00000000" stroke-dasharray="0" stroke-dashoffset="0" stroke-miterlimit="4" stroke-width="1">
+                                                              <animate class="js-yxt-SearchBar-dotsListening" begin="indefinite" attributeName="d" calcMode="spline" dur="0.3s" fill="freeze" href="#dot3" keySplines="0.42 0 0.58 1;0.42 0 0.58 1;0.42 0 0.58 1" keyTimes="0;0.375;0.75;1" repeatCount="indefinite" values="M0,2.5c-0,-1.371,1.129,-2.5,2.5,-2.5 0,0,0,0,0,0 1.371,-0,2.5,1.129,2.5,2.5 0,0,0,0,0,0 0,0,0,0,0,0 0,1.371,-1.129,2.5,-2.5,2.5 -0,0,-0,0,-0,0 0,0,0,0,0,0 -1.371,0,-2.5,-1.129,-2.5,-2.5 0,0,0,0,0,0 0,0,0,-0,0,-0zM0,2.5;M0,2.5c-0,-1.371,1.129,-2.5,2.5,-2.5 0,0,0,0,0,0 1.371,-0,2.5,1.129,2.5,2.5 0,0,0,0,0,0 0,0,0,10,0,10 0,1.371,-1.129,2.5,-2.5,2.5 0,0,-0,0,-0,0 0,0,0,0,0,0 -1.371,0,-2.5,-1.129,-2.5,-2.5 0,0,0,0,0,0 0,0,0,-10,0,-10zM0,2.5;M0,2.5c-0,-1.371,1.129,-2.5,2.5,-2.5 0,0,0,0,0,0 1.371,-0,2.5,1.129,2.5,2.5 0,0,0,0,0,0 0,0,0,0,0,0 0,1.371,-1.129,2.5,-2.5,2.5 -0,0,-0,0,-0,0 0,0,0,0,0,0 -1.371,0,-2.5,-1.129,-2.5,-2.5 0,0,0,0,0,0 0,0,0,-0,0,-0zM0,2.5;M0,2.5c-0,-1.371,1.129,-2.5,2.5,-2.5 0,0,0,0,0,0 1.371,-0,2.5,1.129,2.5,2.5 0,0,0,0,0,0 0,0,0,0,0,0 0,1.371,-1.129,2.5,-2.5,2.5 -0,0,-0,0,-0,0 0,0,0,0,0,0 -1.371,0,-2.5,-1.129,-2.5,-2.5 0,0,0,0,0,0 0,0,0,-0,0,-0zM0,2.5"></animate>
+                                                          </path>
+                                          
+                                                          </g>
+                                                      </g>
+                                                  </svg>
+                                              </g>
+                                          </g>
+                                      </svg>
+                                      <!-- Layer: dot2 -->
+                                      <svg x="9" y="7" width="0.01" height="0.01" style="overflow:visible" opacity="1" label="anchorPointContainer">
+                                          <animate class="js-yxt-SearchBar-dotsListening" begin="indefinite" attributeName="y" calcMode="spline" dur="0.3s" fill="freeze" keySplines="0 0 1 1;0.42 0 0.58 1;0.42 0 0.58 1;0.42 0 0.58 1" keyTimes="0;0.125;0.5;0.875;1" repeatCount="indefinite" values="7;7;4;7;7"></animate>
+                                          <animate class="js-yxt-SearchBar-dotsFadeIn" begin="indefinite" attributeName="x" calcMode="spline" dur="0.3s" fill="freeze" keySplines="0 0 1 1;0.42 0 0.58 1" keyTimes="0;0.5;1" values="0;0;9"></animate>
+                                          <animate class="js-yxt-SearchBar-dotsFadeOut" begin="indefinite" attributeName="x" calcMode="spline" dur="0.3s" fill="freeze" keySplines="0.42 0 0.58 1;0 0 1 1" keyTimes="0;0.5;1" values="9;0;0"></animate>
+                                          <g label="flipped" transform="scale(1 1)">
+                                              <g label="layerRotation" transform="rotate(0)">
+                                                  <svg x="-0" y="-0" width="5" height="5" style="overflow:visible" opacity="1" label="dot2Container">
+                                                      <animate class="js-yxt-SearchBar-dotsListening" begin="indefinite" attributeName="height" calcMode="spline" dur="0.3s" fill="freeze" keySplines="0 0 1 1;0.42 0 0.58 1;0.42 0 0.58 1;0.42 0 0.58 1" keyTimes="0;0.125;0.5;0.875;1" repeatCount="indefinite" values="5;5;11;5;5"></animate>
+                                                      <g clip-path="" label="maskPath">
+                                                          <g label="layerShadow" filter="">
+                                                          <path class="yxt-SearchBar-dot2" d="M0,2.5c-0,-1.371,1.129,-2.5,2.5,-2.5 0,0,0,0,0,0 1.371,-0,2.5,1.129,2.5,2.5 0,0,0,0,0,0 0,0,0,0,0,0 0,1.371,-1.129,2.5,-2.5,2.5 -0,0,-0,0,-0,0 0,0,0,0,0,0 -1.371,0,-2.5,-1.129,-2.5,-2.5 0,0,0,0,0,0 0,0,0,-0,0,-0zM0,2.5" fill="#87B7F7" id="dot2" stroke="#00000000" stroke-dasharray="0" stroke-dashoffset="0" stroke-miterlimit="4" stroke-width="1">
+                                                              <animate class="js-yxt-SearchBar-dotsListening" begin="indefinite" attributeName="d" calcMode="spline" dur="0.3s" fill="freeze" href="#dot2" keySplines="0 0 1 1;0.42 0 0.58 1;0.42 0 0.58 1;0.42 0 0.58 1" keyTimes="0;0.125;0.5;0.875;1" repeatCount="indefinite" values="M0,2.5c-0,-1.371,1.129,-2.5,2.5,-2.5 0,0,0,0,0,0 1.371,-0,2.5,1.129,2.5,2.5 0,0,0,0,0,0 0,0,0,0,0,0 0,1.371,-1.129,2.5,-2.5,2.5 -0,0,-0,0,-0,0 0,0,0,0,0,0 -1.371,0,-2.5,-1.129,-2.5,-2.5 0,0,0,0,0,0 0,0,0,-0,0,-0zM0,2.5;M0,2.5c-0,-1.371,1.129,-2.5,2.5,-2.5 0,0,0,0,0,0 1.371,-0,2.5,1.129,2.5,2.5 0,0,0,0,0,0 0,0,0,0,0,0 0,1.371,-1.129,2.5,-2.5,2.5 -0,0,-0,0,-0,0 0,0,0,0,0,0 -1.371,0,-2.5,-1.129,-2.5,-2.5 0,0,0,0,0,0 0,0,0,-0,0,-0zM0,2.5;M0,2.5c-0,-1.371,1.129,-2.5,2.5,-2.5 0,0,0,0,0,0 1.371,-0,2.5,1.129,2.5,2.5 0,0,0,0,0,0 0,0,0,6,0,6 0,1.371,-1.129,2.5,-2.5,2.5 0,0,-0,0,-0,0 0,0,0,0,0,0 -1.371,0,-2.5,-1.129,-2.5,-2.5 0,0,0,0,0,0 0,0,0,-6,0,-6zM0,2.5;M0,2.5c-0,-1.371,1.129,-2.5,2.5,-2.5 0,0,0,0,0,0 1.371,-0,2.5,1.129,2.5,2.5 0,0,0,0,0,0 0,0,0,0,0,0 0,1.371,-1.129,2.5,-2.5,2.5 -0,0,-0,0,-0,0 0,0,0,0,0,0 -1.371,0,-2.5,-1.129,-2.5,-2.5 0,0,0,0,0,0 0,0,0,-0,0,-0zM0,2.5;M0,2.5c-0,-1.371,1.129,-2.5,2.5,-2.5 0,0,0,0,0,0 1.371,-0,2.5,1.129,2.5,2.5 0,0,0,0,0,0 0,0,0,0,0,0 0,1.371,-1.129,2.5,-2.5,2.5 -0,0,-0,0,-0,0 0,0,0,0,0,0 -1.371,0,-2.5,-1.129,-2.5,-2.5 0,0,0,0,0,0 0,0,0,-0,0,-0zM0,2.5"></animate>
+                                                          </path>
+                                          
+                                                          </g>
+                                                      </g>
+                                                  </svg>
+                                              </g>
+                                          </g>
+                                      </svg>
+                                      <!-- Layer: dot1 -->
+                                      <svg x="0" y="7" width="0.01" height="0.01" style="overflow:visible" opacity="1" label="anchorPointContainer">
+                                          <animate class="js-yxt-SearchBar-dotsListening" begin="indefinite" attributeName="y" calcMode="spline" dur="0.3s" fill="freeze" keySplines="0 0 1 1;0.42 0 0.58 1;0.42 0 0.58 1" keyTimes="0;0.25;0.625;1" repeatCount="indefinite" values="7;7;6;7"></animate>
+                                          <g label="flipped" transform="scale(1 1)">
+                                              <g label="layerRotation" transform="rotate(0)">
+                                                  <svg x="-0" y="-0" width="5" height="5" style="overflow:visible" opacity="1" label="dot1Container">
+                                                      <animate class="js-yxt-SearchBar-dotsListening" begin="indefinite" attributeName="height" calcMode="spline" dur="0.3s" fill="freeze" keySplines="0 0 1 1;0.42 0 0.58 1;0.42 0 0.58 1" keyTimes="0;0.25;0.625;1" repeatCount="indefinite" values="5;5;7;5"></animate>
+                                                      <g clip-path="" label="maskPath">
+                                                          <g label="layerShadow" filter="">
+                                                          <path class="yxt-SearchBar-dot1" d="M0,2.5c-0,-1.371,1.129,-2.5,2.5,-2.5 0,0,0,0,0,0 1.371,-0,2.5,1.129,2.5,2.5 0,0,0,0,0,0 0,0,0,0,0,0 0,1.371,-1.129,2.5,-2.5,2.5 -0,0,-0,0,-0,0 0,0,0,0,0,0 -1.371,0,-2.5,-1.129,-2.5,-2.5 0,0,0,0,0,0 0,0,0,-0,0,-0zM0,2.5" fill="#87B7F7" id="dot1" stroke="#00000000" stroke-dasharray="0" stroke-dashoffset="0" stroke-miterlimit="4" stroke-width="1">
+                                                              <animate class="js-yxt-SearchBar-dotsListening" begin="indefinite" attributeName="d" calcMode="spline" dur="0.3s" fill="freeze" href="#dot1" keySplines="0 0 1 1;0.42 0 0.58 1;0.42 0 0.58 1" keyTimes="0;0.25;0.625;1" repeatCount="indefinite" values="M0,2.5c-0,-1.371,1.129,-2.5,2.5,-2.5 0,0,0,0,0,0 1.371,-0,2.5,1.129,2.5,2.5 0,0,0,0,0,0 0,0,0,0,0,0 0,1.371,-1.129,2.5,-2.5,2.5 -0,0,-0,0,-0,0 0,0,0,0,0,0 -1.371,0,-2.5,-1.129,-2.5,-2.5 0,0,0,0,0,0 0,0,0,-0,0,-0zM0,2.5;M0,2.5c-0,-1.371,1.129,-2.5,2.5,-2.5 0,0,0,0,0,0 1.371,-0,2.5,1.129,2.5,2.5 0,0,0,0,0,0 0,0,0,0,0,0 0,1.371,-1.129,2.5,-2.5,2.5 -0,0,-0,0,-0,0 0,0,0,0,0,0 -1.371,0,-2.5,-1.129,-2.5,-2.5 0,0,0,0,0,0 0,0,0,-0,0,-0zM0,2.5;M0,2.5c-0,-1.371,1.129,-2.5,2.5,-2.5 0,0,0,0,0,0 1.371,-0,2.5,1.129,2.5,2.5 0,0,0,0,0,0 0,0,0,2,0,2 0,1.371,-1.129,2.5,-2.5,2.5 0,0,-0,0,-0,0 0,0,0,0,0,0 -1.371,0,-2.5,-1.129,-2.5,-2.5 0,0,0,0,0,0 0,0,0,-2,0,-2zM0,2.5;M0,2.5c-0,-1.371,1.129,-2.5,2.5,-2.5 0,0,0,0,0,0 1.371,-0,2.5,1.129,2.5,2.5 0,0,0,0,0,0 0,0,0,0,0,0 0,1.371,-1.129,2.5,-2.5,2.5 -0,0,-0,0,-0,0 0,0,0,0,0,0 -1.371,0,-2.5,-1.129,-2.5,-2.5 0,0,0,0,0,0 0,0,0,-0,0,-0zM0,2.5"></animate>
+                                                          </path>
+                                          
+                                                          </g>
+                                                      </g>
+                                                  </svg>
+                                              </g>
+                                          </g>
+                                      </svg>
+                                      <rect fill="none" height="100%" rx="0" stroke="#00000000" stroke-width="1" width="100%" x="0" y="0">
+                                          <animate class="js-yxt-SearchBar-dotsFadeIn" begin="indefinite" attributeName="width" calcMode="spline" dur="0.3s" fill="freeze" keySplines="0 0 1 1;0.42 0 0.58 1" keyTimes="0;0.5;1" values="5;5;32"></animate>
+                                          <animate class="js-yxt-SearchBar-dotsFadeOut" begin="indefinite" attributeName="width" calcMode="spline" dur="0.3s" fill="freeze" keySplines="0.42 0 0.58 1;0 0 1 1" keyTimes="0;0.5;1" values="32;5;5"></animate>
+                                      </rect>
+                                      </g>
+                                  </g>
+                              </svg>
+                          </g>
+                      </g>
+                  </svg></svg>
+                  </div>  </div>
+              <span class="yxt-SearchBar-voiceSearchText sr-only">Start Voice Search</span>
+            </div>          </button>
+        <button type="submit" class="js-yext-submit yxt-SearchBar-button">
+          
+            <div class="yxt-SearchBar-buttonImage js-yxt-SearchBar-buttonImage js-yxt-SearchBar-Icon">
+              <div class="Icon Icon--custom " aria-hidden="true">
+                  <img src="./fujitsu_files/search.png" alt="" class="Icon-image">
+              </div>  </div>
+          <span class="yxt-SearchBar-buttonText sr-only">
+            Submit
+          </span>
+        </button>
+      </form>
+    <div id="yxt-SearchBar-autocomplete--search-bar-pc" class="yxt-SearchBar-autocomplete component yxt-Answers-component"><div class="yxt-AutoComplete-wrapper js-yxt-AutoComplete-wrapper">
+  <span class="yxt-AutoComplete-resultsCount sr-only" aria-live="assertive">
+  </span>
+</div>
+</div>
+  </div>
+</div>
+</div>
+            </div>
+            <ul class="l-header_menu">
+                <li><a href="https://fujitsu.recruiting.jp.fujitsu.com/message/">Message</a></li>
+                <li><a href="https://fujitsu.recruiting.jp.fujitsu.com/mypurpose/">My purpose</a></li>
+                <li><a href="https://fujitsu.recruiting.jp.fujitsu.com/project/">Project</a></li>
+                <li><a href="https://fujitsu.recruiting.jp.fujitsu.com/life/">Life &amp; Work</a></li>
+                <li><a href="https://fujitsu.recruiting.jp.fujitsu.com/event/">Event/Intern</a></li>
+                <li><a href="https://fujitsu.recruiting.jp.fujitsu.com/about/">About Fujitsu</a></li>
+            </ul>
+        </div>
+        <div id="header-search-item-sp" class="l-header_search l-header_search--sp" aria-labelledby="header-search" aria-hidden="true">
+            <div class="search_form-sp component yxt-Answers-component yxt-SearchBar-wrapper"><div class="yxt-SearchBar">
+  <div class="yxt-SearchBar-container">
+      <form class="yxt-SearchBar-form">
+        <label class="sr-only" for="yxt-SearchBar-input--search-bar-sp" id="yxt-SearchBar-inputLabel--search-bar-sp">
+          Conduct a search
+        </label>
+        <input class="js-yext-query yxt-SearchBar-input" id="yxt-SearchBar-input--search-bar-sp" type="text" name="query" value="" placeholder="&quot;一人ひとりの成長&quot;のための変" aria-label="Conduct a search" aria-autocomplete="list" aria-controls="yxt-SearchBar-autocomplete--search-bar-sp" aria-describedby="instructions" aria-haspopup="listbox" autocomplete="off" autocorrect="off" spellcheck="false" aria-expanded="false">
+        <div id="instructions" class="yxt-SearchBar-instructions sr-only">
+          When autocomplete results are available, use up and down arrows to review and enter to select.
+        </div>
+        <button type="button" class="js-yxt-SearchBar-clear yxt-SearchBar-clear yxt-SearchBar--hidden" data-eventtype="SEARCH_CLEAR_BUTTON" data-eventoptions="{}" data-is-analytics-attached="true">
+          <div class="Icon Icon--close " aria-hidden="true">
+            <svg viewBox="0 1 24 24" xmlns="http://www.w3.org/2000/svg">
+              <path d="M7 8l9.716 9.716m0-9.716L7 17.716" stroke="currentColor" stroke-width="2"></path>
+            </svg>
+          </div>          <span class="yxt-SearchBar-clearButtonText sr-only">
+            Clear
+          </span>
+        </button>
+          <button type="button" class="js-yxt-SearchBar-voiceSearch yxt-SearchBar-voiceSearch">
+            <div class="yxt-SearchBar-voiceIconWrapper Icon--lg yxt-SearchBar-CustomMicIcon--active">
+              <div class="yxt-SearchBar-micIconWrapper yxt-SearchBar-CustomMicIcon">
+                  <div class="Icon Icon--custom " aria-hidden="true">
+                      <img src="./fujitsu_files/voice.png" alt="" class="Icon-image">
+                  </div>  </div>
+              <div class="yxt-SearchBar-listeningIconWrapper ">
+                  <div class="Icon Icon--voice_search_dots " aria-hidden="true">
+                    <svg viewBox="0 0 33 27" xmlns="http://www.w3.org/2000/svg"><svg x="0.25" y="4.25" width="0.01" height="0.01" style="overflow:visible" opacity="1" label="anchorPointContainer">
+                      <g label="flipped" transform="scale(1 1)">
+                          <g label="layerRotation" transform="rotate(0)">
+                              <svg x="-0" y="-0" width="32" height="19" style="overflow:visible" opacity="0" label="DotsContainer">
+                              <animate class="js-yxt-SearchBar-dotsFadeIn" begin="indefinite" attributeName="x" calcMode="spline" dur="0.3s" fill="freeze" keySplines="0 0 1 1;0.42 0 0.58 1" keyTimes="0;0.5;1" values="13.5;13.5;0"></animate>
+                              <animate class="js-yxt-SearchBar-dotsFadeIn" begin="indefinite" attributeName="width" calcMode="spline" dur="0.3s" fill="freeze" keySplines="0 0 1 1;0.42 0 0.58 1" keyTimes="0;0.5;1" values="5;5;32"></animate>
+                              <animate class="js-yxt-SearchBar-dotsFadeIn" id="dotsFadeIn" begin="indefinite" attributeName="opacity" calcMode="spline" dur="0.3s" fill="freeze" keySplines="0 0 1 1;0.42 0 0.58 1;0.42 0 0.58 1" keyTimes="0;0.5;0.75;1" values="0;0;1;1"></animate>
+                              <animate class="js-yxt-SearchBar-dotsFadeOut" begin="indefinite" attributeName="x" calcMode="spline" dur="0.3s" fill="freeze" keySplines="0.42 0 0.58 1;0 0 1 1" keyTimes="0;0.5;1" values="0;13.5;13.5"></animate>
+                              <animate class="js-yxt-SearchBar-dotsFadeOut" begin="indefinite" attributeName="width" calcMode="spline" dur="0.3s" fill="freeze" keySplines="0.42 0 0.58 1;0 0 1 1" keyTimes="0;0.5;1" values="32;5;5"></animate>
+                              <animate class="js-yxt-SearchBar-dotsFadeOut" id="dotsFadeOut" begin="indefinite" attributeName="opacity" calcMode="spline" dur="0.3s" fill="freeze" keySplines="0.42 0 0.58 1;0.42 0 0.58 1;0 0 1 1" keyTimes="0;0.5;0.75;1" values="1;1;0;0"></animate>
+                                  <g clip-path="" label="maskPath">
+                                      <g label="layerShadow" filter="">
+                                      <!-- Layer: dot4 -->
+                                      <svg x="27" y="7" width="0.01" height="0.01" style="overflow:visible" opacity="1" label="anchorPointContainer">
+                                          <animate class="js-yxt-SearchBar-dotsListening" begin="indefinite" attributeName="y" calcMode="spline" dur="0.3s" fill="freeze" keySplines="0 0 1 1;0.42 0 0.58 1;0.42 0 0.58 1;0.42 0 0.58 1" keyTimes="0;0.125;0.5;0.875;1" repeatCount="indefinite" values="7;7;5;7;7"></animate>
+                                          <animate class="js-yxt-SearchBar-dotsFadeIn" begin="indefinite" attributeName="x" calcMode="spline" dur="0.3s" fill="freeze" keySplines="0 0 1 1;0.42 0 0.58 1" keyTimes="0;0.5;1" values="0;0;27"></animate>
+                                          <animate class="js-yxt-SearchBar-dotsFadeOut" begin="indefinite" attributeName="x" calcMode="spline" dur="0.3s" fill="freeze" keySplines="0.42 0 0.58 1;0 0 1 1" keyTimes="0;0.5;1" values="27;0;0"></animate>
+                                          <g label="flipped" transform="scale(1 1)">
+                                              <g label="layerRotation" transform="rotate(0)">
+                                                  <svg x="-0" y="-0" width="5" height="5" style="overflow:visible" opacity="1" label="dot4Container">
+                                                      <animate class="js-yxt-SearchBar-dotsListening" begin="indefinite" attributeName="height" calcMode="spline" dur="0.3s" fill="freeze" keySplines="0 0 1 1;0.42 0 0.58 1;0.42 0 0.58 1;0.42 0 0.58 1" keyTimes="0;0.125;0.5;0.875;1" repeatCount="indefinite" values="5;5;9;5;5"></animate>
+                                                      <g clip-path="" label="maskPath">
+                                                          <g label="layerShadow" filter="">
+                                                          <path class="yxt-SearchBar-dot4" d="M0,2.5c-0,-1.371,1.129,-2.5,2.5,-2.5 0,0,0,0,0,0 1.371,-0,2.5,1.129,2.5,2.5 0,0,0,0,0,0 0,0,0,0,0,0 0,1.371,-1.129,2.5,-2.5,2.5 -0,0,-0,0,-0,0 0,0,0,0,0,0 -1.371,0,-2.5,-1.129,-2.5,-2.5 0,0,0,0,0,0 0,0,0,-0,0,-0zM0,2.5" fill="#87B7F7" id="dot4" stroke="#00000000" stroke-dasharray="0" stroke-dashoffset="0" stroke-miterlimit="4" stroke-width="1">
+                                                              <animate class="js-yxt-SearchBar-dotsListening" begin="indefinite" attributeName="d" calcMode="spline" dur="0.3s" fill="freeze" href="#dot4" keySplines="0 0 1 1;0.42 0 0.58 1;0.42 0 0.58 1;0.42 0 0.58 1" keyTimes="0;0.125;0.5;0.875;1" repeatCount="indefinite" values="M0,2.5c-0,-1.371,1.129,-2.5,2.5,-2.5 0,0,0,0,0,0 1.371,-0,2.5,1.129,2.5,2.5 0,0,0,0,0,0 0,0,0,0,0,0 0,1.371,-1.129,2.5,-2.5,2.5 -0,0,-0,0,-0,0 0,0,0,0,0,0 -1.371,0,-2.5,-1.129,-2.5,-2.5 0,0,0,0,0,0 0,0,0,-0,0,-0zM0,2.5;M0,2.5c-0,-1.371,1.129,-2.5,2.5,-2.5 0,0,0,0,0,0 1.371,-0,2.5,1.129,2.5,2.5 0,0,0,0,0,0 0,0,0,0,0,0 0,1.371,-1.129,2.5,-2.5,2.5 -0,0,-0,0,-0,0 0,0,0,0,0,0 -1.371,0,-2.5,-1.129,-2.5,-2.5 0,0,0,0,0,0 0,0,0,-0,0,-0zM0,2.5;M0,2.5c-0,-1.371,1.129,-2.5,2.5,-2.5 0,0,0,0,0,0 1.371,-0,2.5,1.129,2.5,2.5 0,0,0,0,0,0 0,0,0,4,0,4 0,1.371,-1.129,2.5,-2.5,2.5 0,0,-0,0,-0,0 0,0,0,0,0,0 -1.371,0,-2.5,-1.129,-2.5,-2.5 0,0,0,0,0,0 0,0,0,-4,0,-4zM0,2.5;M0,2.5c-0,-1.371,1.129,-2.5,2.5,-2.5 0,0,0,0,0,0 1.371,-0,2.5,1.129,2.5,2.5 0,0,0,0,0,0 0,0,0,0,0,0 0,1.371,-1.129,2.5,-2.5,2.5 -0,0,-0,0,-0,0 0,0,0,0,0,0 -1.371,0,-2.5,-1.129,-2.5,-2.5 0,0,0,0,0,0 0,0,0,-0,0,-0zM0,2.5;M0,2.5c-0,-1.371,1.129,-2.5,2.5,-2.5 0,0,0,0,0,0 1.371,-0,2.5,1.129,2.5,2.5 0,0,0,0,0,0 0,0,0,0,0,0 0,1.371,-1.129,2.5,-2.5,2.5 -0,0,-0,0,-0,0 0,0,0,0,0,0 -1.371,0,-2.5,-1.129,-2.5,-2.5 0,0,0,0,0,0 0,0,0,-0,0,-0zM0,2.5"></animate>
+                                                          </path>
+                                          
+                                                          </g>
+                                                      </g>
+                                                  </svg>
+                                              </g>
+                                          </g>
+                                      </svg>
+                                      <!-- Layer: dot3 -->
+                                      <svg x="18" y="7" width="0.01" height="0.01" style="overflow:visible" opacity="1" label="anchorPointContainer">
+                                          <animate class="js-yxt-SearchBar-dotsListening" begin="indefinite" attributeName="y" calcMode="spline" dur="0.3s" fill="freeze" keySplines="0.42 0 0.58 1;0.42 0 0.58 1;0.42 0 0.58 1" keyTimes="0;0.375;0.75;1" repeatCount="indefinite" values="7;2;7;7"></animate>
+                                          <animate class="js-yxt-SearchBar-dotsFadeIn" begin="indefinite" attributeName="x" calcMode="spline" dur="0.3s" fill="freeze" keySplines="0 0 1 1;0.42 0 0.58 1" keyTimes="0;0.5;1" values="0;0;18"></animate>
+                                          <animate class="js-yxt-SearchBar-dotsFadeOut" begin="indefinite" attributeName="x" calcMode="spline" dur="0.3s" fill="freeze" keySplines="0.42 0 0.58 1;0 0 1 1" keyTimes="0;0.5;1" values="18;0;0"></animate>
+                                          <g label="flipped" transform="scale(1 1)">
+                                              <g label="layerRotation" transform="rotate(0)">
+                                                  <svg x="-0" y="-0" width="5" height="5" style="overflow:visible" opacity="1" label="dot3Container">
+                                                      <animate class="js-yxt-SearchBar-dotsListening" begin="indefinite" attributeName="height" calcMode="spline" dur="0.3s" fill="freeze" keySplines="0.42 0 0.58 1;0.42 0 0.58 1;0.42 0 0.58 1" keyTimes="0;0.375;0.75;1" repeatCount="indefinite" values="5;15;5;5"></animate>
+                                                      <g clip-path="" label="maskPath">
+                                                          <g label="layerShadow" filter="">
+                                                          <path class="yxt-SearchBar-dot3" d="M0,2.5c-0,-1.371,1.129,-2.5,2.5,-2.5 0,0,0,0,0,0 1.371,-0,2.5,1.129,2.5,2.5 0,0,0,0,0,0 0,0,0,0,0,0 0,1.371,-1.129,2.5,-2.5,2.5 -0,0,-0,0,-0,0 0,0,0,0,0,0 -1.371,0,-2.5,-1.129,-2.5,-2.5 0,0,0,0,0,0 0,0,0,-0,0,-0zM0,2.5" fill="#87B7F7" id="dot3" stroke="#00000000" stroke-dasharray="0" stroke-dashoffset="0" stroke-miterlimit="4" stroke-width="1">
+                                                              <animate class="js-yxt-SearchBar-dotsListening" begin="indefinite" attributeName="d" calcMode="spline" dur="0.3s" fill="freeze" href="#dot3" keySplines="0.42 0 0.58 1;0.42 0 0.58 1;0.42 0 0.58 1" keyTimes="0;0.375;0.75;1" repeatCount="indefinite" values="M0,2.5c-0,-1.371,1.129,-2.5,2.5,-2.5 0,0,0,0,0,0 1.371,-0,2.5,1.129,2.5,2.5 0,0,0,0,0,0 0,0,0,0,0,0 0,1.371,-1.129,2.5,-2.5,2.5 -0,0,-0,0,-0,0 0,0,0,0,0,0 -1.371,0,-2.5,-1.129,-2.5,-2.5 0,0,0,0,0,0 0,0,0,-0,0,-0zM0,2.5;M0,2.5c-0,-1.371,1.129,-2.5,2.5,-2.5 0,0,0,0,0,0 1.371,-0,2.5,1.129,2.5,2.5 0,0,0,0,0,0 0,0,0,10,0,10 0,1.371,-1.129,2.5,-2.5,2.5 0,0,-0,0,-0,0 0,0,0,0,0,0 -1.371,0,-2.5,-1.129,-2.5,-2.5 0,0,0,0,0,0 0,0,0,-10,0,-10zM0,2.5;M0,2.5c-0,-1.371,1.129,-2.5,2.5,-2.5 0,0,0,0,0,0 1.371,-0,2.5,1.129,2.5,2.5 0,0,0,0,0,0 0,0,0,0,0,0 0,1.371,-1.129,2.5,-2.5,2.5 -0,0,-0,0,-0,0 0,0,0,0,0,0 -1.371,0,-2.5,-1.129,-2.5,-2.5 0,0,0,0,0,0 0,0,0,-0,0,-0zM0,2.5;M0,2.5c-0,-1.371,1.129,-2.5,2.5,-2.5 0,0,0,0,0,0 1.371,-0,2.5,1.129,2.5,2.5 0,0,0,0,0,0 0,0,0,0,0,0 0,1.371,-1.129,2.5,-2.5,2.5 -0,0,-0,0,-0,0 0,0,0,0,0,0 -1.371,0,-2.5,-1.129,-2.5,-2.5 0,0,0,0,0,0 0,0,0,-0,0,-0zM0,2.5"></animate>
+                                                          </path>
+                                          
+                                                          </g>
+                                                      </g>
+                                                  </svg>
+                                              </g>
+                                          </g>
+                                      </svg>
+                                      <!-- Layer: dot2 -->
+                                      <svg x="9" y="7" width="0.01" height="0.01" style="overflow:visible" opacity="1" label="anchorPointContainer">
+                                          <animate class="js-yxt-SearchBar-dotsListening" begin="indefinite" attributeName="y" calcMode="spline" dur="0.3s" fill="freeze" keySplines="0 0 1 1;0.42 0 0.58 1;0.42 0 0.58 1;0.42 0 0.58 1" keyTimes="0;0.125;0.5;0.875;1" repeatCount="indefinite" values="7;7;4;7;7"></animate>
+                                          <animate class="js-yxt-SearchBar-dotsFadeIn" begin="indefinite" attributeName="x" calcMode="spline" dur="0.3s" fill="freeze" keySplines="0 0 1 1;0.42 0 0.58 1" keyTimes="0;0.5;1" values="0;0;9"></animate>
+                                          <animate class="js-yxt-SearchBar-dotsFadeOut" begin="indefinite" attributeName="x" calcMode="spline" dur="0.3s" fill="freeze" keySplines="0.42 0 0.58 1;0 0 1 1" keyTimes="0;0.5;1" values="9;0;0"></animate>
+                                          <g label="flipped" transform="scale(1 1)">
+                                              <g label="layerRotation" transform="rotate(0)">
+                                                  <svg x="-0" y="-0" width="5" height="5" style="overflow:visible" opacity="1" label="dot2Container">
+                                                      <animate class="js-yxt-SearchBar-dotsListening" begin="indefinite" attributeName="height" calcMode="spline" dur="0.3s" fill="freeze" keySplines="0 0 1 1;0.42 0 0.58 1;0.42 0 0.58 1;0.42 0 0.58 1" keyTimes="0;0.125;0.5;0.875;1" repeatCount="indefinite" values="5;5;11;5;5"></animate>
+                                                      <g clip-path="" label="maskPath">
+                                                          <g label="layerShadow" filter="">
+                                                          <path class="yxt-SearchBar-dot2" d="M0,2.5c-0,-1.371,1.129,-2.5,2.5,-2.5 0,0,0,0,0,0 1.371,-0,2.5,1.129,2.5,2.5 0,0,0,0,0,0 0,0,0,0,0,0 0,1.371,-1.129,2.5,-2.5,2.5 -0,0,-0,0,-0,0 0,0,0,0,0,0 -1.371,0,-2.5,-1.129,-2.5,-2.5 0,0,0,0,0,0 0,0,0,-0,0,-0zM0,2.5" fill="#87B7F7" id="dot2" stroke="#00000000" stroke-dasharray="0" stroke-dashoffset="0" stroke-miterlimit="4" stroke-width="1">
+                                                              <animate class="js-yxt-SearchBar-dotsListening" begin="indefinite" attributeName="d" calcMode="spline" dur="0.3s" fill="freeze" href="#dot2" keySplines="0 0 1 1;0.42 0 0.58 1;0.42 0 0.58 1;0.42 0 0.58 1" keyTimes="0;0.125;0.5;0.875;1" repeatCount="indefinite" values="M0,2.5c-0,-1.371,1.129,-2.5,2.5,-2.5 0,0,0,0,0,0 1.371,-0,2.5,1.129,2.5,2.5 0,0,0,0,0,0 0,0,0,0,0,0 0,1.371,-1.129,2.5,-2.5,2.5 -0,0,-0,0,-0,0 0,0,0,0,0,0 -1.371,0,-2.5,-1.129,-2.5,-2.5 0,0,0,0,0,0 0,0,0,-0,0,-0zM0,2.5;M0,2.5c-0,-1.371,1.129,-2.5,2.5,-2.5 0,0,0,0,0,0 1.371,-0,2.5,1.129,2.5,2.5 0,0,0,0,0,0 0,0,0,0,0,0 0,1.371,-1.129,2.5,-2.5,2.5 -0,0,-0,0,-0,0 0,0,0,0,0,0 -1.371,0,-2.5,-1.129,-2.5,-2.5 0,0,0,0,0,0 0,0,0,-0,0,-0zM0,2.5;M0,2.5c-0,-1.371,1.129,-2.5,2.5,-2.5 0,0,0,0,0,0 1.371,-0,2.5,1.129,2.5,2.5 0,0,0,0,0,0 0,0,0,6,0,6 0,1.371,-1.129,2.5,-2.5,2.5 0,0,-0,0,-0,0 0,0,0,0,0,0 -1.371,0,-2.5,-1.129,-2.5,-2.5 0,0,0,0,0,0 0,0,0,-6,0,-6zM0,2.5;M0,2.5c-0,-1.371,1.129,-2.5,2.5,-2.5 0,0,0,0,0,0 1.371,-0,2.5,1.129,2.5,2.5 0,0,0,0,0,0 0,0,0,0,0,0 0,1.371,-1.129,2.5,-2.5,2.5 -0,0,-0,0,-0,0 0,0,0,0,0,0 -1.371,0,-2.5,-1.129,-2.5,-2.5 0,0,0,0,0,0 0,0,0,-0,0,-0zM0,2.5;M0,2.5c-0,-1.371,1.129,-2.5,2.5,-2.5 0,0,0,0,0,0 1.371,-0,2.5,1.129,2.5,2.5 0,0,0,0,0,0 0,0,0,0,0,0 0,1.371,-1.129,2.5,-2.5,2.5 -0,0,-0,0,-0,0 0,0,0,0,0,0 -1.371,0,-2.5,-1.129,-2.5,-2.5 0,0,0,0,0,0 0,0,0,-0,0,-0zM0,2.5"></animate>
+                                                          </path>
+                                          
+                                                          </g>
+                                                      </g>
+                                                  </svg>
+                                              </g>
+                                          </g>
+                                      </svg>
+                                      <!-- Layer: dot1 -->
+                                      <svg x="0" y="7" width="0.01" height="0.01" style="overflow:visible" opacity="1" label="anchorPointContainer">
+                                          <animate class="js-yxt-SearchBar-dotsListening" begin="indefinite" attributeName="y" calcMode="spline" dur="0.3s" fill="freeze" keySplines="0 0 1 1;0.42 0 0.58 1;0.42 0 0.58 1" keyTimes="0;0.25;0.625;1" repeatCount="indefinite" values="7;7;6;7"></animate>
+                                          <g label="flipped" transform="scale(1 1)">
+                                              <g label="layerRotation" transform="rotate(0)">
+                                                  <svg x="-0" y="-0" width="5" height="5" style="overflow:visible" opacity="1" label="dot1Container">
+                                                      <animate class="js-yxt-SearchBar-dotsListening" begin="indefinite" attributeName="height" calcMode="spline" dur="0.3s" fill="freeze" keySplines="0 0 1 1;0.42 0 0.58 1;0.42 0 0.58 1" keyTimes="0;0.25;0.625;1" repeatCount="indefinite" values="5;5;7;5"></animate>
+                                                      <g clip-path="" label="maskPath">
+                                                          <g label="layerShadow" filter="">
+                                                          <path class="yxt-SearchBar-dot1" d="M0,2.5c-0,-1.371,1.129,-2.5,2.5,-2.5 0,0,0,0,0,0 1.371,-0,2.5,1.129,2.5,2.5 0,0,0,0,0,0 0,0,0,0,0,0 0,1.371,-1.129,2.5,-2.5,2.5 -0,0,-0,0,-0,0 0,0,0,0,0,0 -1.371,0,-2.5,-1.129,-2.5,-2.5 0,0,0,0,0,0 0,0,0,-0,0,-0zM0,2.5" fill="#87B7F7" id="dot1" stroke="#00000000" stroke-dasharray="0" stroke-dashoffset="0" stroke-miterlimit="4" stroke-width="1">
+                                                              <animate class="js-yxt-SearchBar-dotsListening" begin="indefinite" attributeName="d" calcMode="spline" dur="0.3s" fill="freeze" href="#dot1" keySplines="0 0 1 1;0.42 0 0.58 1;0.42 0 0.58 1" keyTimes="0;0.25;0.625;1" repeatCount="indefinite" values="M0,2.5c-0,-1.371,1.129,-2.5,2.5,-2.5 0,0,0,0,0,0 1.371,-0,2.5,1.129,2.5,2.5 0,0,0,0,0,0 0,0,0,0,0,0 0,1.371,-1.129,2.5,-2.5,2.5 -0,0,-0,0,-0,0 0,0,0,0,0,0 -1.371,0,-2.5,-1.129,-2.5,-2.5 0,0,0,0,0,0 0,0,0,-0,0,-0zM0,2.5;M0,2.5c-0,-1.371,1.129,-2.5,2.5,-2.5 0,0,0,0,0,0 1.371,-0,2.5,1.129,2.5,2.5 0,0,0,0,0,0 0,0,0,0,0,0 0,1.371,-1.129,2.5,-2.5,2.5 -0,0,-0,0,-0,0 0,0,0,0,0,0 -1.371,0,-2.5,-1.129,-2.5,-2.5 0,0,0,0,0,0 0,0,0,-0,0,-0zM0,2.5;M0,2.5c-0,-1.371,1.129,-2.5,2.5,-2.5 0,0,0,0,0,0 1.371,-0,2.5,1.129,2.5,2.5 0,0,0,0,0,0 0,0,0,2,0,2 0,1.371,-1.129,2.5,-2.5,2.5 0,0,-0,0,-0,0 0,0,0,0,0,0 -1.371,0,-2.5,-1.129,-2.5,-2.5 0,0,0,0,0,0 0,0,0,-2,0,-2zM0,2.5;M0,2.5c-0,-1.371,1.129,-2.5,2.5,-2.5 0,0,0,0,0,0 1.371,-0,2.5,1.129,2.5,2.5 0,0,0,0,0,0 0,0,0,0,0,0 0,1.371,-1.129,2.5,-2.5,2.5 -0,0,-0,0,-0,0 0,0,0,0,0,0 -1.371,0,-2.5,-1.129,-2.5,-2.5 0,0,0,0,0,0 0,0,0,-0,0,-0zM0,2.5"></animate>
+                                                          </path>
+                                          
+                                                          </g>
+                                                      </g>
+                                                  </svg>
+                                              </g>
+                                          </g>
+                                      </svg>
+                                      <rect fill="none" height="100%" rx="0" stroke="#00000000" stroke-width="1" width="100%" x="0" y="0">
+                                          <animate class="js-yxt-SearchBar-dotsFadeIn" begin="indefinite" attributeName="width" calcMode="spline" dur="0.3s" fill="freeze" keySplines="0 0 1 1;0.42 0 0.58 1" keyTimes="0;0.5;1" values="5;5;32"></animate>
+                                          <animate class="js-yxt-SearchBar-dotsFadeOut" begin="indefinite" attributeName="width" calcMode="spline" dur="0.3s" fill="freeze" keySplines="0.42 0 0.58 1;0 0 1 1" keyTimes="0;0.5;1" values="32;5;5"></animate>
+                                      </rect>
+                                      </g>
+                                  </g>
+                              </svg>
+                          </g>
+                      </g>
+                  </svg></svg>
+                  </div>  </div>
+              <span class="yxt-SearchBar-voiceSearchText sr-only">Start Voice Search</span>
+            </div>          </button>
+        <button type="submit" class="js-yext-submit yxt-SearchBar-button">
+          
+            <div class="yxt-SearchBar-buttonImage js-yxt-SearchBar-buttonImage js-yxt-SearchBar-Icon">
+              <div class="Icon Icon--custom " aria-hidden="true">
+                  <img src="./fujitsu_files/search.png" alt="" class="Icon-image">
+              </div>  </div>
+          <span class="yxt-SearchBar-buttonText sr-only">
+            Submit
+          </span>
+        </button>
+      </form>
+    <div id="yxt-SearchBar-autocomplete--search-bar-sp" class="yxt-SearchBar-autocomplete component yxt-Answers-component"><div class="yxt-AutoComplete-wrapper js-yxt-AutoComplete-wrapper">
+  <span class="yxt-AutoComplete-resultsCount sr-only" aria-live="assertive">
+  </span>
+</div>
+</div>
+  </div>
+</div>
+</div>
+        </div>
+        <div class="l-header_corporate">
+            <a href="https://www.fujitsu.com/jp/" target="_blank"><span class="l-header_corporate_text">Fujitsu</span></a>
+        </div>
+    <!-- /.l-header_container --></div>
+</header><div class="l-breadcrumb" role="navigation" aria-label="パンくずリスト">
+    <ol class="l-breadcrumb_list" itemscope="" itemtype="http://schema.org/BreadcrumbList">
+        <li itemprop="itemListElement" itemscope="" itemtype="http://schema.org/ListItem">
+            <a href="https://fujitsu.recruiting.jp.fujitsu.com/" itemprop="item"><span itemprop="name">ホーム</span></a>
+            <meta itemprop="position" content="1">
+        </li>
+  		        <li itemprop="itemListElement" itemscope="" itemtype="http://schema.org/ListItem">
+            <span itemprop="name" aria-current="page">データの力で世界を変える 富士通 データサイエンス部 開校</span>
+            <meta itemprop="position" content="2">
+        </li>
+            </ol>
+</div>
+
+<main class="l-main" id="main">
+    <div class="l-content">
+
+<div class="c-hero-header c-bg-sb-rd-or-t2">
+            <div class="c-hero-header_inner">
+                <div class="c-hero-header_content">
+                    <h1 class="c-hero-header_title">データの力で世界を変える 富士通 データサイエンス部 開校</h1>
+                </div>
+            </div>
+        </div>
+
+        <div class="c-section">
+            <div class="c-container c-container--sm">
+                <figure class="c-figure">
+                    <img decoding="async" src="./fujitsu_files/main_01.jpg" alt="">
+                </figure>
+            </div>
+        </div>
+
+        <div class="c-section c-bg-bl-cy">
+            <div class="c-container c-container--sm">
+                <p class="c-center">こんなものがあったら、<br class="c-pc-hidden">あんなことができたら。<br>誰もが一度は考えたこのある、<br class="c-pc-hidden">夢や希望であふれた未来。<br>これからの未来は誰が創る？<br class="c-pc-hidden">そう、君たちだ。<br>いつまでも創られた世界で<br class="c-pc-hidden">生きていちゃつまらない。</p>
+                <p class="c-center">君たちのために、<br class="c-sp-hidden">世界で最も高額で、<br class="c-pc-hidden">最も優れたデータ利活用基盤を用意した。<br>どんなに大容量データでも、<br class="c-pc-hidden">複雑な処理でも、<br class="c-pc-hidden">ストレスなくぶん回せる。</p>
+                <p class="c-center c-f24">動くものができたなら、<br class="c-pc-hidden">即、市場に、顧客に成果を問いにいこう。<br>国内シェアNo.1の顧客基盤を持つ<br class="c-pc-hidden">富士通に会えないお客様はいない。</p>
+                <p class="c-center c-f28">申し訳ないが、<br class="c-pc-hidden">手の動かない口だけの<br class="c-pc-hidden">評論家はいらない。<br>真剣に勝負して<br class="c-pc-hidden">みたい人に来てほしい。<br>さぁ、データの力で<br class="c-pc-hidden">世界を変えよう。</p>
+            </div>
+        </div>
+
+        <div class="c-section">
+            <div class="c-container c-container--sm">
+                <h2 class="c-heading-lv2">ポイント</h2>
+                <div class="c-figure-flex">
+                    <div class="c-figure">
+                        <img decoding="async" src="./fujitsu_files/icon_01.png" alt="" width="100">
+                    </div>
+                    <div class="c-figure_text">
+                        <h3 class="c-heading-lv3"><span class="c-label c-bg-bl c-f16">POINT 1</span><br>現場のビジネス環境での開発を体感できます！</h3>
+                        <p>実際のビジネス現場で、富士通のデータサイエンティストと一緒に、<br class="c-sp-hidden">想定顧客に対してデータ利活用ユースケースの策定、データ統合、分析、<br class="c-sp-hidden">アプリ開発を行っていただきます。<br>
+                        富士通のデータサイエンティストのお仕事の魅力や楽しさだけでなく<br class="c-sp-hidden">厳しさも味わって頂きます。</p>
+                    </div>
+                </div>
+                <div class="c-figure-flex">
+                    <div class="c-figure">
+                        <img decoding="async" src="./fujitsu_files/icon_02.png" alt="" width="100">
+                    </div>
+                    <div class="c-figure_text">
+                        <h3 class="c-heading-lv3"><span class="c-label c-bg-bl c-f16">POINT 2</span><br>幹部社員からのフィードバックがもらえます！</h3>
+                        <p>コンペ形式で、皆さんに創出いただいたサービスを審査、表彰します。<br>
+                        データビジネスを最前線で推進しているビジネス部門、開発部門の幹部社員が<br class="c-sp-hidden">審査員として登場します。<br>
+                        幹部社員視点での貴重なフィードバックが得られます。</p>
+                        <div class="c-box c-box--sm c-margin-sm">
+                            <dl class="c-list c-list--dl">
+                                <dt>審査員（予定）</dt>
+                                <dd>Uvance本部Digital Shifts<br>Large Data Platformグループ長<br>土井 悠哉　ほか</dd>
+                            </dl>
+                        </div>
+                    </div>
+                </div>
+                <div class="c-figure-flex">
+                    <div class="c-figure">
+                        <img decoding="async" src="./fujitsu_files/icon_03.png" alt="" width="100">
+                    </div>
+                    <div class="c-figure_text">
+                        <h3 class="c-heading-lv3"><span class="c-label c-bg-bl c-f16">POINT 3</span><br>世界最高峰のデータ利活用基盤</h3>
+                        <p>2020年6月よりFlagship Technology Partnerとして50億の出資を伴う<br class="c-sp-hidden">パートナーシップを締結している、Palantir社のFoundryを特別に操作頂きます。<br>
+                        データ活用において必要な全ての機能が高度に統合されたプラットフォームです。<br>
+                        1度味わうと巷でよく聞く他製品は操作できなくなるかもしれませんが、<br class="c-sp-hidden">クレームは受け付けられませんので、ご了承ください。</p>
+                    </div>
+                </div>
+
+                <h2 class="c-heading-lv2">テーマ募集</h2>
+                <p>あなたが取り組みたいテーマを大募集！<br>取り組んでみたいテーマや実現したい未来にチャレンジしてみませんか？</p>
+                <ul class="c-list c-list--note c-f14">
+                    <li><span class="c-list_mark">※</span><div class="c-list_item">下記「申し込みフォームより」ご記入いただきます。</div></li>
+                </ul>
+                <p>世の中に転がるデータはどんどん膨れ上がっています。<sup>（※）</sup><br>
+                映像や音声、センサーなど非構造化データも増え、ファイルの形式はバラバラです。<br>
+                データで世界を変えるには、この究極のサイロを使える形にするところから始まります。<br>
+                バラバラで膨大なデータ群をヒトが意味を直感的に理解できる形に統合し<br class="c-sp-hidden">誰（社会や企業や消費者）に、価値を提供したいかを明確にしたうえで<br class="c-sp-hidden">実現したい世界、提供したい価値を大募集します！</p>
+                <ul class="c-list c-list--note c-f14">
+                    <li><span class="c-list_mark">※</span><div class="c-list_item">2020年時点の世界のデータ流通量は59ゼタバイト</div></li>
+                </ul>
+
+                <h2 class="c-heading-lv2">募集要項</h2>
+                <table class="c-table">
+                    <tbody>
+                        <tr>
+                            <th scope="row">開催日程</th>
+                            <td>
+                                <p>2023年2月13日（月）～2023年3月27日（月）</p>
+                                <dl class="c-list c-list--dl">
+                                    <dt>スケジュール</dt>
+                                    <dd>2月13日（月）：PCセットアップ・オリエンテーション<br>
+                                    2月20日（月）：テーマ発表会<br>
+                                    3月6日（月）：中間発表会<br>
+                                    3月27日（月）：成果発表会</dd>
+                                </dl>
+                                <ul class="c-list c-list--note c-f14">
+                                    <li><span class="c-list_mark">※</span><div class="c-list_item">全日程オンライン開催です。</div></li>
+                                    <li><span class="c-list_mark">※</span><div class="c-list_item">全体ミーティング以外の作業時間として平均2～3時間／日を想定しております。</div></li>
+                                </ul>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th scope="row">エントリー期間</th>
+                            <td>2023年1月17日（火）正午まで
+
+                            </td>
+                        </tr>
+                        <tr>
+                            <th scope="row">参加条件</th>
+                            <td>
+                                <ul class="c-list c-list--disc">
+                                    <li>データビジネスに強い関心を持っている方</li>
+                                    <li>解決したい社会課題、組織課題を抱えている方</li>
+                                    <li>プログラミングやプロダクト開発の経験がある方</li>
+                                    <li>AIやデータ分析を学ばれている方</li>
+                                </ul>
+                                <ul class="c-list c-list--note c-f14">
+                                    <li><span class="c-list_mark">※</span><div class="c-list_item">個人でも、チームでもご応募いただくことが可能です</div></li>
+                                </ul>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                <h2 class="c-heading-lv2">昨年参加者の声</h2>
+                <div class="c-circle-layout">
+                    <div class="c-image-circle">
+                        <div class="c-image-circle_inner c-image-circle_inner--em-lm">
+                            <img decoding="async" src="./fujitsu_files/img_01.jpg" alt="">
+                        </div>
+                        <span class="c-image-circle_caption">昨年度優勝者：Y.Jさん</span>
+                    </div>
+                    <div class="c-circle_text">
+                        <p>富士通ハッカソンでは、オープンデータと富士通社内のデータを組み合わせ、富士通社員の働き方について分析する課題に携わらせていただきました。データ分析に使用するソフトウェアの基本操作の学習から始まり、データ分析の目的の検討、データの前処理、統計解析や機械学習によるデータ分析、そして、可視化や意思決定支援のためのアプリケーション開発まで、1ヶ月という短期間ではありますが、社員さんの手厚いサポートのもとでデータサイエンティストとしての業務を一通り体験することができます。この短期間での開発を可能にする（非常に高額な）ソフトウェアを利用させていただけたことは大きな魅力の一つです。ハッカソンを通じて、データサイエンティストという職種の具体的な業務内容への理解が深まり、就職後のイメージが明確になりました。</p>
+                    </div>
+                </div>
+                <div class="c-circle-layout">
+                    <div class="c-image-circle">
+                        <div class="c-image-circle_inner c-image-circle_inner--em-lm">
+                            <img decoding="async" src="./fujitsu_files/img_02.jpg" alt="">
+                        </div>
+                        <span class="c-image-circle_caption">昨年度参加者：S.Eさん</span>
+                    </div>
+                    <div class="c-circle_text">
+                        <p>富士通データサイエンス部では「どんなデータを使うのか？」「どうデータを組み合わせるのか？」「どのような価値を創り出すのか？」といった事柄を限られた期間でチームで考え、形にします。<br>こうした活動の中で、私はデータサイエンティスト職を知るだけでなく、チームでのシステム構築やデータを扱う技術の習得などの様々な経験をすることができました。ぜひ、富士通データサイエンス部に参加して貴重な経験を積んでください！</p>
+                    </div>
+                </div>
+                <div class="c-circle-layout">
+                    <div class="c-image-circle">
+                        <div class="c-image-circle_inner c-image-circle_inner--em-lm">
+                            <img decoding="async" src="./fujitsu_files/img_03.jpg" alt="">
+                        </div>
+                        <span class="c-image-circle_caption">昨年度参加者：M.Hさん</span>
+                    </div>
+                    <div class="c-circle_text">
+                        <p>私は、地方のDXが進んでいないという問題意識から、観光分野自体のデジタル化不足を発見し、観光客が見たいデータを提供できるようなプラットフォームを構想し、実装しました。自らの問題意識のうち、どこがアイデアとして優れていて、実現可能なのかというビジネスに必須の視点を学ぶことができ、さらに、Palantirというダイナミックなデータ活用プラットフォームを使って、構想、実装まで行う経験はほかのどこでもできないような経験だったと思っています。</p>
+                    </div>
+                </div>
+                <div class="c-circle-layout">
+                    <div class="c-image-circle">
+                        <div class="c-image-circle_inner c-image-circle_inner--em-lm">
+                            <img decoding="async" src="./fujitsu_files/img_04.jpg" alt="">
+                        </div>
+                        <span class="c-image-circle_caption">昨年度参加者：S.Yさん</span>
+                    </div>
+                    <div class="c-circle_text">
+                        <p>私は統計や機械学習を専門とした研究に取り組んでいます。研究から得た知識をデータサイエンスを必要とする実務に活用したいと考え、本ハッカソンに参加しました。ハッカソンでは顧客が抱える様々な業務課題を自らの調査を通して発見し、実データを通じた解決策を提案します。それを達成するためには、数理的な専門知識の他に、課題に対するアイデアや構想を練ることが重要です。私は社内データ利活用基盤を用いて、この経験を1ヶ月間で学ぶことができました。</p>
+                    </div>
+                </div>
+
+                <h2 class="c-heading-lv2">応募の流れ</h2>
+                <ol class="c-flow-list">
+                    <li class="c-flow">
+                        <div class="c-flow_image">
+                            <img decoding="async" src="./fujitsu_files/img_05.png" alt="">
+                            <strong class="c-flow_image_label">STEP1</strong>
+                        </div>
+                        <div class="c-flow_text">
+                            <h3 class="c-heading-lv3">お申し込み</h3>
+                            <p class="c-margin-xsm">以下のリンクボタンより、応募フォームに進み、お申し込みください。</p>
+                            <ul class="c-btn-list c-margin-sm">
+                                <li><a href="https://fujitsurecruit.secure.force.com/fjsurvey/?ssession_id=cCPq%2Fe2VhIQS3SxqK%2F9UNPMHu4qH6paYknYGBsgq1tBJlCv5V3fw46TBOQn4cbjE&amp;" target="_blank" class="c-btn c-bg-rd c-btn--icon" rel="noopener">申込フォームは<br class="c-pc-hidden">こちら<img decoding="async" src="./fujitsu_files/icon-window_wh.png" class="c-icon" alt="新しいウィンドウで開きます"></a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="c-flow">
+                        <div class="c-flow_image">
+                            <img decoding="async" src="./fujitsu_files/img_06.png" alt="">
+                            <strong class="c-flow_image_label">STEP2</strong>
+                        </div>
+                        <div class="c-flow_text">
+                            <h3 class="c-heading-lv3">書類選考</h3>
+                            <p class="c-margin-xsm">お申し込みいただいた方の選考を行います。</p>
+                        </div>
+                    </li>
+                    <li class="c-flow">
+                        <div class="c-flow_image">
+                            <img decoding="async" src="./fujitsu_files/img_07.png" alt="">
+                            <strong class="c-flow_image_label">STEP3</strong>
+                        </div>
+                        <div class="c-flow_text">
+                            <h3 class="c-heading-lv3">面接</h3>
+                            <p class="c-margin-xsm">書類選考通過者・チームの皆様との面接を実施します。<br>
+                            実施日程：1月23日（月）～1月24日（火）9:00～18:00</p>
+                            <ul class="c-list c-list--note c-f14">
+                                <li><span class="c-list_mark">※</span><div class="c-list_item">合格者の方には面接時間を別途ご連絡いたします。</div></li>
+                            </ul>
+                        </div>
+                    </li>
+                </ol>
+            <!-- /.c-container --></div>
+        <!-- /.c-section --></div>
+    </div>
+</main>
+
+<div class="l-bottom-breadcrumb" role="navigation" aria-label="コンテンツ末尾 パンくずリスト">
+    <ol class="l-breadcrumb_list" itemscope="" itemtype="http://schema.org/BreadcrumbList">
+        <li itemprop="itemListElement" itemscope="" itemtype="http://schema.org/ListItem">
+            <a href="https://fujitsu.recruiting.jp.fujitsu.com/" itemprop="item"><span itemprop="name">ホーム</span></a>
+            <meta itemprop="position" content="1">
+        </li>
+  		        <li itemprop="itemListElement" itemscope="" itemtype="http://schema.org/ListItem">
+            <span itemprop="name" aria-current="page">データの力で世界を変える 富士通 データサイエンス部 開校</span>
+            <meta itemprop="position" content="2">
+        </li>
+            </ol>
+</div>
+
+<footer class="l-footer">
+    <div class="l-pagetop" aria-hidden="false" style="display: block;"><a href="https://fujitsu.recruiting.jp.fujitsu.com/hackathon/#"><span>このページの先頭へ</span></a></div>
+    <div class="l-footer_container">
+        <div class="l-footer_sitemap" role="navigation" aria-label="サイトマップ">
+            <div class="l-footer_sitemap_lv1">
+                <a href="https://fujitsu.recruiting.jp.fujitsu.com/" class="l-footer_sitemap_lv1--site">Fujitsu recruit</a>
+            </div>
+            <div class="l-footer_sitemap_lv2">
+                <ul class="c-category-list">
+                    <li><a href="https://fujitsu.recruiting.jp.fujitsu.com/recruit/" class="c-category c-category--graduate">新卒採用</a></li>
+                    <li><a href="https://fujitsu.recruiting.jp.fujitsu.com/career/" class="c-category c-category--career">キャリア採用</a></li>
+                    <li><a href="https://fujitsu.recruiting.jp.fujitsu.com/barrierfree/" class="c-category c-category--barrierfree">障がい者採用</a></li>
+                    <li><a href="https://fujitsu.recruiting.jp.fujitsu.com/groupcareer/" class="c-category c-category--groupcareer">グループ採用</a></li>
+                </ul>
+                <ul class="l-footer_sitemap_list">
+                    <li><a href="https://fujitsu.recruiting.jp.fujitsu.com/message/">Message</a></li>
+                    <li><a href="https://fujitsu.recruiting.jp.fujitsu.com/mypurpose/">My purpose</a></li>
+                    <li><a href="https://fujitsu.recruiting.jp.fujitsu.com/project/">Project</a></li>
+                    <li><a href="https://fujitsu.recruiting.jp.fujitsu.com/life/">Life &amp; Work</a></li>
+                    <li><a href="https://fujitsu.recruiting.jp.fujitsu.com/event/">Event/Intern</a></li>
+                    <li><a href="https://fujitsu.recruiting.jp.fujitsu.com/about/">About Fujitsu</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="l-footer_utility">
+            <ul class="l-footer_link">
+                <li class="l-footer_link_item"><a href="https://www.fujitsu.com/jp/about/resources/terms/" target="_blank">このサイトについて<img src="./fujitsu_files/icon-window_wh.png" class="c-icon" alt="新しいウィンドウで開きます"></a></li>
+                <li class="l-footer_link_item"><a href="https://www.fujitsu.com/jp/about/resources/privacy/" target="_blank">個人情報保護ポリシーについて<img src="./fujitsu_files/icon-window_wh.png" class="c-icon" alt="新しいウィンドウで開きます"></a></li>
+                <li class="l-footer_link_item"><a href="https://www.fujitsu.com/jp/support/" target="_blank">お問い合わせ<img src="./fujitsu_files/icon-window_wh.png" class="c-icon" alt="新しいウィンドウで開きます"></a></li>
+            </ul>
+            <p class="l-footer_copy">Copyright © 2014-2023 FUJITSU</p>
+        </div>
+    </div>
+</footer>
+</div>
+<script src="./fujitsu_files/lib.js.ダウンロード"></script>
+<script src="./fujitsu_files/common.js.ダウンロード"></script>
+
+<script type="text/javascript" id="">(function(a){var b=a.createElement("script");b.setAttribute("data-account","D9ECByJHJL");b.setAttribute("src","https://cdn.userway.org/widget.js");(a.body||a.head).appendChild(b)})(document);</script><script data-account="D9ECByJHJL" src="./fujitsu_files/widget.js.ダウンロード"></script><noscript>Please ensure Javascript is enabled for purposes of <a href="https://userway.org">website accessibility</a></noscript><script src="./fujitsu_files/widget_app_base_1675855254472.js.ダウンロード" async="" id="a11yWidgetSrc"></script></body></html>
